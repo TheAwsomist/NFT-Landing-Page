@@ -1,0 +1,81 @@
+$gradient: linear-gradient(104.42deg, #4745d0 0%, #2a27c9 60.23%);
+body {
+  button {
+    // box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1),
+    //   inset 4px 4px 4px rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.2px;
+    /* On White/Grey 100 */
+  }
+
+  .primary-button {
+    background: $gradient;
+    border: none;
+    color: white;
+  }
+
+  .secondary-button {
+    background-color: white;
+    border: 2px solid #7780a1;
+    color: #7780a1;
+    transition: 0.1s all ease-in;
+  }
+  .secondary-button:hover, .secondary-button:focus{
+    background: $gradient;
+    border: none;
+    color: white;
+  }
+}
+.navbar {
+  width: 99.5vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  padding: 0rem 2.4375rem;
+  box-sizing: border-box;
+  .logo,
+  .account-options {
+    width: 20%;
+  }
+
+  .account-options {
+    display: flex;
+    justify-content: space-evenly;
+
+    button {
+      width: 40%;
+      height: 4rem;
+    }
+  }
+  .logo {
+  }
+  .nav-options {
+    width: 60%;
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      li {
+        width: fit-content;
+        list-style: none;
+        font-family: "Sora";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #7780a1;
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+body button {
+  border-radius: 12px;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0.2px;
+  /* On White/Grey 100 */
+}
+
+body .primary-button {
+  background: linear-gradient(104.42deg, #4745d0 0%, #2a27c9 60.23%);
+  border: none;
+  color: white;
+}
+
+body .secondary-button {
+  background-color: white;
+  border: 2px solid #7780a1;
+  color: #7780a1;
+  -webkit-transition: 0.1s all ease-in;
+  transition: 0.1s all ease-in;
+}
+
+body .secondary-button:hover, body .secondary-button:focus {
+  background: linear-gradient(104.42deg, #4745d0 0%, #2a27c9 60.23%);
+  border: none;
+  color: white;
+}
+
+.navbar {
+  width: 99.5vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 2.4375rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar .logo,
+.navbar .account-options {
+  width: 20%;
+}
+
+.navbar .account-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.navbar .account-options button {
+  width: 40%;
+  height: 4rem;
+}
+
+.navbar .nav-options {
+  width: 60%;
+}
+
+.navbar .nav-options ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.navbar .nav-options ul li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  list-style: none;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #7780a1;
+}
+/*# sourceMappingURL=Navbar.css.map */
