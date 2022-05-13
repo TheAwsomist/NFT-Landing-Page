@@ -6,6 +6,8 @@ import PaintBucket from "./PaintBucket";
 import SearchBar from "./SearchBar";
 import Spyglass from "./Spyglass";
 import LiveAuctions from "./LiveAuctions";
+import Counter from "./Counter";
+import TabDiv from "./TabDiv";
 
 export default function MainNav() {
 
@@ -43,6 +45,8 @@ export default function MainNav() {
       </div>
       <Spyglass/>
       <LiveAuctions/>
+      <Counter/>
+      <TabDiv/>
     </div>
   );
 }

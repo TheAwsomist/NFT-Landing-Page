@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import Card from "./Card";
+import {Card} from "./Card";
 import nft1 from "../assets/nft1.png";
 import nft2 from "../assets/nft2.png";
 import nft3 from "../assets/nft3.png";

@@ -10,6 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #fcfcfc;
   overflow-x: hidden;
+  user-select: none;
 }
 
 

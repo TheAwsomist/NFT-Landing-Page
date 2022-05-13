@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Spyglass() {
   return (
-    <div className="paintbucket-div">
-      <div className="paintbucket-data" style={{ width: "80%", height: "80%" }}>
+    <div className="paintbucket-div spyglass-div">
+      <div className="paintbucket-data spyglass-data" style={{ width: "80%", height: "100%" }}>
         <div className="spyglass"></div>
         <div className="paintbucket-info">
           <p className="subheading-1">OVERLINE</p>

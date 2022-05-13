@@ -18,13 +18,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 7rem;
 }
 
 .landing-div .subheading-1 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,7 +44,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 2rem;
   line-height: 150%;
   /* identical to box height, or 36px */
   display: -webkit-box;
@@ -83,7 +84,7 @@
   border: none;
   color: #8f939e;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1vw;
   line-height: 150%;
   height: 70%;
 }
@@ -196,7 +197,7 @@
 
 .paintbucket-div .paint-buttons button {
   width: 30%;
-  height: 5vh;
+  height: 6vh;
   margin-right: 10px;
 }
 
@@ -206,6 +207,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   width: 60%;
+  height: 100%;
 }
 
 .paintbucket-div .subheading-1 {
@@ -230,7 +232,7 @@
   font-family: "Sora";
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
+  font-size: 3rem;
   line-height: 100%;
   /* or 64px */
   letter-spacing: 0.2px;
@@ -244,7 +246,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 0.9rem;
   line-height: 150%;
   /* or 24px */
   letter-spacing: 0.2px;
@@ -340,12 +342,18 @@
   visibility: visible;
 }
 
+.spyglass-div {
+  height: 85vh;
+}
+
 .spyglass {
   background-image: url("../assets/spyglass.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   width: 60%;
+  height: 60%;
+  margin: auto 0;
 }
 
 .spyglass-icons {
@@ -353,7 +361,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 2em 0em;
 }
 
 .spyglass-icons .spy-data {
@@ -393,7 +400,7 @@
   font-family: "Sora";
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,7 +418,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 0.8rem;
   line-height: 150%;
   /* identical to box height, or 24px */
   -webkit-box-align: center;
@@ -425,7 +432,7 @@
 
 .live-auction {
   width: 100%;
-  height: 80vh;
+  height: 115vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,7 +443,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #e2e2ed;
+  border-top: 1px solid #e2e2ed;
+  border-bottom: 1px solid #e2e2ed;
 }
 
 .live-auction .auctions-title {
@@ -449,7 +457,9 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 25%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: 0px auto;
   -webkit-column-gap: 10px;
           column-gap: 10px;
@@ -497,5 +507,22 @@
   text-transform: uppercase;
   /* On White/Grey 50 */
   color: #bbc0d0;
+}
+
+.live-auction .small-card-holder {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=MainNav.css.map */

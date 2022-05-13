@@ -1,9 +1,61 @@
+@media screen and (max-width: 950px) {
+  .nav-options {
+    display: none;
+  }
+  .navbar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1030px) and (min-width: 950px) {
+  button {
+    font-size: 1.2vw;
+    white-space: nowrap;
+  }
+  .nav-options {
+    display: block;
+  }
+  .logo,
+  .account-options {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1030px) {
+  button {
+    font-size: 1vw;
+    white-space: nowrap;
+  }
+  .nav-options {
+    display: block;
+  }
+  .logo,
+  .account-options {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  button {
+    font-size: 1vw;
+    white-space: nowrap;
+  }
+  .nav-options {
+    display: block;
+  }
+  .logo,
+  .account-options {
+    width: 30%;
+  }
+}
+
 body button {
   border-radius: 12px;
   font-family: "Sora";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
   line-height: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,7 +106,7 @@ body .secondary-button:hover, body .secondary-button:focus {
 
 .navbar .logo,
 .navbar .account-options {
-  width: 20%;
+  width: 30%;
 }
 
 .navbar .account-options {
@@ -68,7 +120,7 @@ body .secondary-button:hover, body .secondary-button:focus {
 
 .navbar .account-options button {
   width: 40%;
-  height: 4rem;
+  height: 3rem;
 }
 
 .navbar .nav-options {

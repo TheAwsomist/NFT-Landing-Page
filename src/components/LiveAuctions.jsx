@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import NftSlider2 from './NftSlider2';
 
 export default function LiveAuctions() {
     const [selected,Setselected] = useState("Photography");
@@ -11,6 +12,9 @@ export default function LiveAuctions() {
             <button className={selected === "Photography"?"buttons active":"buttons"} onClick={(e)=>Setselected(e.target.innerHTML)}>Photography</button>
             <button className={selected === "Games"?"buttons active":"buttons"} onClick={(e)=>Setselected(e.target.innerHTML)}>Games</button>
             <button className={selected === "Music"?"buttons active":"buttons"} onClick={(e)=>Setselected(e.target.innerHTML)}>Music</button>
+        </div>
+        <div>
+          <NftSlider2/>
         </div>
     </div>
   )

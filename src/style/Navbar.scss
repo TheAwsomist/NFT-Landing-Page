@@ -1,4 +1,68 @@
 $gradient: linear-gradient(104.42deg, #4745d0 0%, #2a27c9 60.23%);
+// ======================= MEDIA QUERIES =================================
+
+@media screen and (max-width:660px) {
+  
+}
+
+
+@media screen and (max-width:950px) {
+  .nav-options{
+    display: none;
+  }
+  .navbar{
+    justify-content: space-between;
+  }
+}
+
+
+@media screen and (max-width:1030px) and (min-width:950px) {
+  button{
+    font-size: 1.2vw;
+    white-space: nowrap;
+  }
+  .nav-options{
+    display: block;
+  }
+  .logo,
+  .account-options {
+    width: 30%;
+  }
+}
+@media screen and (max-width:1280px) and (min-width:1030px) {
+  button{
+    font-size: 1vw;
+    white-space: nowrap;
+  }
+  .nav-options{
+    display: block;
+  }
+  .logo,
+  .account-options {
+    width: 30%;
+  }
+}
+@media screen and (min-width:1280px) {
+  button{
+    font-size: 1vw;
+    white-space: nowrap;
+  }
+  .nav-options{
+    display: block;
+  }
+  .logo,
+  .account-options {
+    width: 30%;
+  }
+}
+
+
+
+
+
+
+// ======================= MEDIA QUERIES =================================
+
 body {
   button {
     // box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1),
@@ -7,7 +71,6 @@ body {
     font-family: "Sora";
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
     line-height: 20px;
     display: flex;
     align-items: center;
@@ -43,7 +106,7 @@ body {
   box-sizing: border-box;
   .logo,
   .account-options {
-    width: 20%;
+    width: 30%;
   }
 
   .account-options {
@@ -52,7 +115,7 @@ body {
 
     button {
       width: 40%;
-      height: 4rem;
+      height: 3rem;
     }
   }
   .logo {
