@@ -1,3 +1,17 @@
+@media screen and (max-width: 768px) {
+  button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .nav-options {
     display: none;
@@ -57,9 +71,6 @@ body button {
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -144,7 +155,7 @@ body .secondary-button:hover, body .secondary-button:focus {
   font-family: "Sora";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: calc(0.5em + 0.5vw);
   line-height: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
