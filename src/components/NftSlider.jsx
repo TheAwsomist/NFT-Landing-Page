@@ -10,9 +10,8 @@ import nft5 from "../assets/nft5.png";
 export default function NftSlider() {
   var settings = {
     arrows:true,
-    dots:true,
     infinity:false,
-    speed: 3000,
+    speed: 500,
     slidesToShow: 5,  
     slidesToScroll: 4,
     initialSlide: 0,
@@ -33,20 +32,31 @@ export default function NftSlider() {
           slidesToScroll: 2,
           initialSlide: 2,
           arrows: true,
+          dots:true,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           arrows: true,
+          dots:false,
+        },
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: true,
+          dots:false,
         },
       },
     ],
   };
   return(
-      <Slider {...settings}>
+      <Slider {...settings} className="nftslider">
         <div><Card cardimage={nft1}/></div>
         <div><Card cardimage={nft2}/></div>
         <div><Card cardimage={nft3}/></div>

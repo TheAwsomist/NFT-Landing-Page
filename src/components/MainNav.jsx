@@ -26,7 +26,7 @@ export default function MainNav() {
     <div className="mainpage">
       <div className="landing-div">
         <p className="subheading-1">NON FUNGIBLE TOKENS</p>
-        <img src={Title} alt="Title" style={{ width: "55%" }} />
+        <img src={Title} alt="Title" className="maintitle"/>
         <p className="subheading-2">Discover, collect and sell</p>
         <SearchBar/>
         <div className="logo-types"></div>

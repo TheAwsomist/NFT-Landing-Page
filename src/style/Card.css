@@ -1,263 +1,1301 @@
-.cardsmall {
-  width: 12vw;
-  height: 65vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 320px) {
+  .cardsmall {
+    width: 40vw;
+    height: 65vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cardsmall .card-image-small {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+  }
+  .cardsmall .card-image {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+            box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+  }
+  .cardsmall .info-section {
+    width: 100%;
+    height: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .cardsmall .card-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px 10px;
+  }
+  .cardsmall .price-tag {
+    width: 40%;
+    background: rgba(42, 39, 201, 0.1);
+    border-radius: 4px;
+    height: 26%;
+    padding: 5px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    white-space: nowrap;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(0.5vw + 0.5em);
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    /* Primary/Purple Dark 100 */
+    color: #2a27c9;
+  }
+  .cardsmall .card-title {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    text-align: start;
+    margin: 0;
+    /* On White/Dark 100 */
+    color: #060714;
+    width: 100%;
+  }
+  .cardsmall .timer {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 150%;
+    white-space: nowrap;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    /* On White/Dark 100 */
+    color: #060714;
+    text-align: start;
+    padding: 0px 10px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .card {
+    width: 85%;
+    height: 55vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card .card-image-small {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+            box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+  }
+  .card .card-image {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+            box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+  }
+  .card .info-section {
+    width: 100%;
+    height: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .card .card-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px 10px;
+  }
+  .card .price-tag {
+    width: 26%;
+    background: rgba(42, 39, 201, 0.1);
+    border-radius: 4px;
+    height: 26%;
+    padding: 5px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    white-space: nowrap;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(0.5vw + 0.5em);
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    /* Primary/Purple Dark 100 */
+    color: #2a27c9;
+  }
+  .card .card-title {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(0.5vw + 0.5em);
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    text-align: start;
+    margin: 0;
+    /* On White/Dark 100 */
+    color: #060714;
+    width: 60%;
+  }
+  .card .timer {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.5vw + 0.5em);
+    line-height: 150%;
+    white-space: nowrap;
+    width: 90%;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.2px;
+    /* On White/Dark 100 */
+    color: #060714;
+    text-align: start;
+    padding: 0px 10px;
+    height: 18%;
+    border-bottom: 0.5px solid lightgrey;
+  }
 }
 
-.cardsmall .card-image-small {
-  width: 100%;
-  height: 65%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 20px;
+@media screen and (min-width: 480px) {
+  .cardsmall {
+    width: 29vw;
+    height: 65vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cardsmall .card-image-small {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+  }
+  .cardsmall .card-image {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+            box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+  }
+  .cardsmall .info-section {
+    width: 100%;
+    height: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .cardsmall .card-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px 10px;
+  }
+  .cardsmall .price-tag {
+    width: 40%;
+    background: rgba(42, 39, 201, 0.1);
+    border-radius: 4px;
+    height: 26%;
+    padding: 5px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    white-space: nowrap;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(0.4vw + 0.5em);
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    /* Primary/Purple Dark 100 */
+    color: #2a27c9;
+  }
+  .cardsmall .card-title {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    text-align: start;
+    margin: 0;
+    /* On White/Dark 100 */
+    color: #060714;
+    width: 100%;
+  }
+  .cardsmall .timer {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 150%;
+    white-space: nowrap;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    /* On White/Dark 100 */
+    color: #060714;
+    text-align: start;
+    padding: 0px 10px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .card {
+    width: 85%;
+    height: 55vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card .card-image-small {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+            box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+  }
+  .card .card-image {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+            box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+  }
+  .card .info-section {
+    width: 100%;
+    height: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .card .card-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px 10px;
+  }
+  .card .price-tag {
+    width: 26%;
+    background: rgba(42, 39, 201, 0.1);
+    border-radius: 4px;
+    height: 26%;
+    padding: 5px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    white-space: nowrap;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    /* Primary/Purple Dark 100 */
+    color: #2a27c9;
+  }
+  .card .card-title {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(0.5vw + 0.5em);
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    text-align: start;
+    margin: 0;
+    /* On White/Dark 100 */
+    color: #060714;
+    width: 60%;
+  }
+  .card .timer {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.5vw + 0.5em);
+    line-height: 150%;
+    white-space: nowrap;
+    width: 90%;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.2px;
+    /* On White/Dark 100 */
+    color: #060714;
+    text-align: start;
+    padding: 0px 10px;
+    height: 18%;
+    border-bottom: 0.5px solid lightgrey;
+  }
 }
 
-.cardsmall .card-image {
-  width: 100%;
-  height: 65%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 20px;
-  -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
-          box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+@media screen and (min-width: 768px) {
+  .cardsmall {
+    width: 14vw;
+    height: 65vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cardsmall .card-image-small {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+  }
+  .cardsmall .card-image {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+            box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+  }
+  .cardsmall .info-section {
+    width: 100%;
+    height: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .cardsmall .card-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px 10px;
+  }
+  .cardsmall .price-tag {
+    width: 40%;
+    background: rgba(42, 39, 201, 0.1);
+    border-radius: 4px;
+    height: 26%;
+    padding: 5px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    white-space: nowrap;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(0.4vw + 0.3em);
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    /* Primary/Purple Dark 100 */
+    color: #2a27c9;
+  }
+  .cardsmall .card-title {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    text-align: start;
+    margin: 0;
+    /* On White/Dark 100 */
+    color: #060714;
+    width: 100%;
+  }
+  .cardsmall .timer {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 150%;
+    white-space: nowrap;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    /* On White/Dark 100 */
+    color: #060714;
+    text-align: start;
+    padding: 0px 10px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .card {
+    width: 85%;
+    height: 55vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card .card-image-small {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+            box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+  }
+  .card .card-image {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+            box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+  }
+  .card .info-section {
+    width: 100%;
+    height: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .card .card-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px 10px;
+  }
+  .card .price-tag {
+    width: 26%;
+    background: rgba(42, 39, 201, 0.1);
+    border-radius: 4px;
+    height: 26%;
+    padding: 5px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    white-space: nowrap;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    /* Primary/Purple Dark 100 */
+    color: #2a27c9;
+  }
+  .card .card-title {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(0.5vw + 0.5em);
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    text-align: start;
+    margin: 0;
+    /* On White/Dark 100 */
+    color: #060714;
+    width: 60%;
+  }
+  .card .timer {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.5vw + 0.5em);
+    line-height: 150%;
+    white-space: nowrap;
+    width: 90%;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.2px;
+    /* On White/Dark 100 */
+    color: #060714;
+    text-align: start;
+    padding: 0px 10px;
+    height: 18%;
+    border-bottom: 0.5px solid lightgrey;
+  }
 }
 
-.cardsmall .info-section {
-  width: 100%;
-  height: 35%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+@media screen and (min-width: 1024px) {
+  .cardsmall {
+    width: 12vw;
+    height: 65vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cardsmall .card-image-small {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+  }
+  .cardsmall .card-image {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+            box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+  }
+  .cardsmall .info-section {
+    width: 100%;
+    height: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .cardsmall .card-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px 10px;
+  }
+  .cardsmall .price-tag {
+    width: 40%;
+    background: rgba(42, 39, 201, 0.1);
+    border-radius: 4px;
+    height: 26%;
+    padding: 5px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    white-space: nowrap;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    /* Primary/Purple Dark 100 */
+    color: #2a27c9;
+  }
+  .cardsmall .card-title {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    text-align: start;
+    margin: 0;
+    /* On White/Dark 100 */
+    color: #060714;
+    width: 100%;
+  }
+  .cardsmall .timer {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 150%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    /* On White/Dark 100 */
+    color: #060714;
+    text-align: start;
+    padding: 0px 10px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .card {
+    width: 90%;
+    height: 55vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card .card-image-small {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+            box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+  }
+  .card .card-image {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+            box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+  }
+  .card .info-section {
+    width: 100%;
+    height: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .card .card-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px 10px;
+  }
+  .card .price-tag {
+    width: 26%;
+    background: rgba(42, 39, 201, 0.1);
+    border-radius: 4px;
+    height: 26%;
+    padding: 5px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    white-space: nowrap;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    /* Primary/Purple Dark 100 */
+    color: #2a27c9;
+  }
+  .card .card-title {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(0.5vw + 0.5em);
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    text-align: start;
+    margin: 0;
+    /* On White/Dark 100 */
+    color: #060714;
+    width: 60%;
+  }
+  .card .timer {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.5vw + 0.5em);
+    line-height: 150%;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    width: 90%;
+    /* On White/Dark 100 */
+    color: #060714;
+    text-align: start;
+    padding: 0px 10px;
+    height: 18%;
+    border-bottom: 0.5px solid lightgrey;
+  }
 }
 
-.cardsmall .card-info {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0px 10px;
+@media screen and (min-width: 1200px) {
+  .cardsmall {
+    width: 12vw;
+    height: 65vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cardsmall .card-image-small {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+  }
+  .cardsmall .card-image {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+            box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+  }
+  .cardsmall .info-section {
+    width: 100%;
+    height: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .cardsmall .card-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px 10px;
+  }
+  .cardsmall .price-tag {
+    width: 40%;
+    background: rgba(42, 39, 201, 0.1);
+    border-radius: 4px;
+    height: 26%;
+    padding: 5px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    white-space: nowrap;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    /* Primary/Purple Dark 100 */
+    color: #2a27c9;
+  }
+  .cardsmall .card-title {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    text-align: start;
+    margin: 0;
+    /* On White/Dark 100 */
+    color: #060714;
+    width: 100%;
+  }
+  .cardsmall .timer {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 150%;
+    white-space: nowrap;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    /* On White/Dark 100 */
+    color: #060714;
+    text-align: start;
+    padding: 0px 10px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .card {
+    width: 90%;
+    height: 55vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card .card-image-small {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+            box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+  }
+  .card .card-image {
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+            box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
+  }
+  .card .info-section {
+    width: 100%;
+    height: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .card .card-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px 10px;
+  }
+  .card .price-tag {
+    width: 26%;
+    background: rgba(42, 39, 201, 0.1);
+    border-radius: 4px;
+    height: 26%;
+    padding: 5px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    white-space: nowrap;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    /* Primary/Purple Dark 100 */
+    color: #2a27c9;
+  }
+  .card .card-title {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(0.5vw + 0.5em);
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    text-align: start;
+    margin: 0;
+    /* On White/Dark 100 */
+    color: #060714;
+    width: 60%;
+  }
+  .card .timer {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.5vw + 0.5em);
+    line-height: 150%;
+    white-space: nowrap;
+    width: 90%;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.2px;
+    /* On White/Dark 100 */
+    color: #060714;
+    text-align: start;
+    padding: 0px 10px;
+    height: 18%;
+    border-bottom: 0.5px solid lightgrey;
+  }
 }
 
-.cardsmall .price-tag {
-  width: 40%;
-  background: rgba(42, 39, 201, 0.1);
-  border-radius: 4px;
-  height: 26%;
-  padding: 5px 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Sora";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 0.8vw;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: right;
-  letter-spacing: 0.2px;
-  white-space: nowrap;
-  /* Primary/Purple Dark 100 */
-  color: #2a27c9;
+@media screen and (min-width: 1350px) {
+  .card {
+    width: 85%;
+  }
 }
 
-.cardsmall .card-title {
-  font-family: "Sora";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 0.8rem;
-  line-height: 25px;
-  letter-spacing: 0.2px;
-  text-align: start;
-  margin: 0;
-  /* On White/Dark 100 */
-  color: #060714;
-  width: 100%;
-}
-
-.cardsmall .timer {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.7rem;
-  line-height: 150%;
-  /* identical to box height, or 21px */
-  letter-spacing: 0.2px;
-  white-space: nowrap;
-  /* On White/Dark 100 */
-  color: #060714;
-  text-align: start;
-  padding: 0px 10px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.card {
-  width: 16vw;
-  height: 55vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.card .card-image-small {
-  width: 100%;
-  height: 65%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 20px;
-  -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
-          box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
-}
-
-.card .card-image {
-  width: 100%;
-  height: 65%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 20px;
-  -webkit-box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
-          box-shadow: -5px 7px 16px 0px rgba(135, 135, 135, 0.44);
-}
-
-.card .info-section {
-  width: 100%;
-  height: 35%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.card .card-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0px 10px;
-}
-
-.card .price-tag {
-  width: 26%;
-  background: rgba(42, 39, 201, 0.1);
-  border-radius: 4px;
-  height: 26%;
-  padding: 5px 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Sora";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 0.8vw;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: right;
-  letter-spacing: 0.2px;
-  white-space: nowrap;
-  /* Primary/Purple Dark 100 */
-  color: #2a27c9;
-}
-
-.card .card-title {
-  font-family: "Sora";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 25px;
-  letter-spacing: 0.2px;
-  text-align: start;
-  margin: 0;
-  /* On White/Dark 100 */
-  color: #060714;
-  width: 60%;
-}
-
-.card .timer {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 150%;
-  /* identical to box height, or 21px */
-  letter-spacing: 0.2px;
-  /* On White/Dark 100 */
-  color: #060714;
-  text-align: start;
-  padding: 0px 10px;
-  height: 18%;
-  border-bottom: 0.5px solid lightgrey;
+@media screen and (min-width: 1500px) {
+  .card {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=Card.css.map */

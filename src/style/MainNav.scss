@@ -1,7 +1,7 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) {
   .landing-div {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background-image: url("../assets/Group\ 1.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -10,6 +10,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .maintitle{
+      width: 75%;
+    }
 
     .subheading-1 {
       font-family: "Inter";
@@ -50,7 +54,869 @@
       padding-right: 10px;
       box-shadow: 0px 25px 75px rgba(6, 7, 20, 0.1);
       border-radius: 16px;
-      width: 32%;
+      width: 55%;
+      height: 10%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      margin-top: 2%;
+      input,
+      select {
+        border: none;
+        color: #8f939e;
+        font-weight: 400;
+        font-size: calc(0.4em + 0.4vw);
+        line-height: 150%;
+        height: 70%;
+      }
+
+      input:focus,
+      select:focus {
+        outline: none;
+      }
+      select {
+        width: 30%;
+      }
+      option {
+        color: black;
+      }
+      input {
+        width: 50%;
+        border-right: 1px solid lightgrey;
+      }
+      .search-icon {
+        width: 20%;
+      }
+      .search-icon {
+        height: 55%;
+        color: #2a27c9;
+        width: 20%;
+      }
+    }
+    .logo-types {
+      background-image: url("../assets/Logotypes.png");
+      width: 42%;
+      height: 10%;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-top: 10%;
+    }
+  }
+
+  .latest-live {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(2vw + 1.5em);
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* On White/Dark 100 */
+
+    color: #060714;
+    margin-bottom: 10vh;
+    margin-top: 7vh;
+  }
+
+  .mainpage {
+    width: 99.5vw;
+  }
+
+  .paintbucket-div {
+    height: 90vh;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .paintbucket-data {
+      width: 85%;
+      display: flex;
+      height: 80%;
+      flex-direction: column;
+    }
+
+    .paintbucket-info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .paint-buttons {
+      display: flex;
+      button {
+        width: 30%;
+        height: 6vh;
+        margin-right: 10px;
+      }
+    }
+
+    .paintbucket {
+      background-image: url("../assets/bucket.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+
+    .subheading-1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      /* On White/Grey 50 */
+
+      color: #bbc0d0;
+    }
+
+    .paint-heading {
+      font-family: "Sora";
+      font-style: normal;
+      font-weight: 600;
+      font-size: calc(2vw + 2em);
+      line-height: 100%;
+      /* or 64px */
+
+      letter-spacing: 0.2px;
+      text-align: start;
+      margin: 5px 0px;
+
+      /* On White/Dark 100 */
+
+      color: #060714;
+    }
+    .paint-paragraph {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.9rem;
+      line-height: 150%;
+      /* or 24px */
+
+      letter-spacing: 0.2px;
+
+      /* On White/Grey 100 */
+
+      color: #7780a1;
+      text-align: start;
+    }
+  }
+
+  .mobile-screens {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .image-displays {
+      width: 90%;
+      height: 90%;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr 1fr;
+      .mobilescreen {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .left-screen {
+        background-image: url("../assets/leftscreen.png");
+      }
+      .middle-screen {
+        background-image: url("../assets/middlescreen.png");
+        margin: -20px 0px;
+      }
+      .right-screen {
+        background-image: url("../assets/rightscreen.png");
+      }
+    }
+  }
+  .fade-in-section-1 {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section-2 {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.9s ease-out, transform 2s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section-3 {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 1.2s ease-out, transform 2.5s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section-1.is-visible,
+  .fade-in-section-2.is-visible,
+  .fade-in-section-3.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+  // ================== SPYGLASS CSS ================
+
+  .spyglass-div {
+    height: 85vh;
+    margin-bottom: 7vh;
+  }
+
+  .spyglass {
+    background-image: url("../assets/spyglass.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60%;
+    margin: auto 0;
+  }
+
+  .spyglass-icons {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    .spy-data {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 45%;
+      .spy-icon-1,
+      .spy-icon-2 {
+        width: 100%;
+        height: 35px;
+        background-repeat: no-repeat;
+      }
+      .spy-icon-1 {
+        background-image: url("../assets/spyglass-icon1.png");
+        background-position: center;
+        background-size: contain;
+      }
+      .spy-icon-2 {
+        background-image: url("../assets/spyglass-icon2.png");
+        background-position: center;
+        background-size: contain;
+      }
+      .spy-text-1 {
+        font-family: "Sora";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.2px;
+        margin-bottom: 1px;
+
+        /* On White/Dark 100 */
+
+        color: #060714;
+      }
+      .spy-text-2 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 150%;
+        /* identical to box height, or 24px */
+
+        align-items: center;
+        letter-spacing: 0.2px;
+        margin-top: 1px;
+        /* On White/Grey 100 */
+
+        color: #7780a1;
+      }
+    }
+  }
+
+
+  // ============= POPULAR LIVE AUCTIONS ====================
+
+  .live-auction {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #e2e2ed;
+    border-bottom: 1px solid #e2e2ed;
+    padding-top: 2vh;
+    box-sizing: border-box;
+
+    .auctions-title {
+      margin: 1em 0;
+      margin-top: 0.1em;
+    }
+    .auction-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      width: fit-content;
+      margin: 0px 5px;
+      column-gap: 10px;
+      .buttons {
+        font-family: "Sora";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.2px;
+        padding: 8px 5px;
+
+        /* On White/Grey 100 */
+
+        color: #7780a1;
+
+        border: 2px solid #e2e2ed;
+        border-radius: 8px;
+        background-color: #fcfcfc;
+        transition: 0.1s all ease-in;
+      }
+      .active {
+        border: 2px solid #bbc0d0;
+        border-radius: 8px;
+      }
+    }
+
+    .subheading-1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      align-items: center;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      /* On White/Grey 50 */
+
+      color: #bbc0d0;
+    }
+
+    .small-card-holder {
+      width: fit-content;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+      justify-content: space-between;
+      margin-top: 3rem;
+      // flex-wrap: wrap;
+    }
+  }
+}
+
+// =================================== MIN WIDTH 480 PX ========================================================
+
+@media screen and (min-width: 480px) {
+  .landing-div {
+    width: 100%;
+    height: 50vh;
+    background-image: url("../assets/Group\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .maintitle{
+      width: 75%;
+    }
+
+    .subheading-1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: calc(0.5em+0.5vw);
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      /* On White/Grey 100 */
+
+      color: #7780a1;
+    }
+    .subheading-2 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: calc(1em + 1vw);
+      line-height: 150%;
+      /* identical to box height, or 36px */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.2px;
+
+      /* On White/Grey 100 */
+
+      color: #7780a1;
+    }
+    .form {
+      box-sizing: border-box;
+      padding: 10px 10px;
+      padding-right: 10px;
+      box-shadow: 0px 25px 75px rgba(6, 7, 20, 0.1);
+      border-radius: 16px;
+      width: 55%;
+      height: 10%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      margin-top: 2%;
+      input,
+      select {
+        border: none;
+        color: #8f939e;
+        font-weight: 400;
+        font-size: calc(0.4em + 0.4vw);
+        line-height: 150%;
+        height: 70%;
+      }
+
+      input:focus,
+      select:focus {
+        outline: none;
+      }
+      select {
+        width: 30%;
+      }
+      option {
+        color: black;
+      }
+      input {
+        width: 50%;
+        border-right: 1px solid lightgrey;
+      }
+      .search-icon {
+        width: 20%;
+      }
+      .search-icon {
+        height: 55%;
+        color: #2a27c9;
+        width: 20%;
+      }
+    }
+    .logo-types {
+      background-image: url("../assets/Logotypes.png");
+      width: 42%;
+      height: 10%;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-top: 10%;
+    }
+  }
+
+  .latest-live {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(2vw + 1.5em);
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* On White/Dark 100 */
+
+    color: #060714;
+    margin-bottom: 10vh;
+    margin-top: 7vh;
+  }
+
+  .mainpage {
+    width: 99.5vw;
+  }
+
+  .paintbucket-div {
+    height: 100vh;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .paintbucket-data {
+      width: 65%;
+      display: flex;
+      height: 80%;
+      flex-direction: column;
+    }
+
+    .paintbucket-info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .paint-buttons {
+      display: flex;
+      button {
+        width: 30%;
+        height: 6vh;
+        margin-right: 10px;
+      }
+    }
+
+    .paintbucket {
+      background-image: url("../assets/bucket.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+
+    .subheading-1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      /* On White/Grey 50 */
+
+      color: #bbc0d0;
+    }
+
+    .paint-heading {
+      font-family: "Sora";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 3rem;
+      line-height: 100%;
+      /* or 64px */
+
+      letter-spacing: 0.2px;
+      text-align: start;
+      margin: 5px 0px;
+
+      /* On White/Dark 100 */
+
+      color: #060714;
+    }
+    .paint-paragraph {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.9rem;
+      line-height: 150%;
+      /* or 24px */
+
+      letter-spacing: 0.2px;
+
+      /* On White/Grey 100 */
+
+      color: #7780a1;
+      text-align: start;
+    }
+  }
+
+  .mobile-screens {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .image-displays {
+      width: 90%;
+      height: 90%;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr 1fr;
+      .mobilescreen {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .left-screen {
+        background-image: url("../assets/leftscreen.png");
+      }
+      .middle-screen {
+        background-image: url("../assets/middlescreen.png");
+        margin: -20px 0px;
+      }
+      .right-screen {
+        background-image: url("../assets/rightscreen.png");
+      }
+    }
+  }
+
+  .fade-in-section-1 {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section-2 {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.9s ease-out, transform 2s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section-3 {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 1.2s ease-out, transform 2.5s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section-1.is-visible,
+  .fade-in-section-2.is-visible,
+  .fade-in-section-3.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+  // ================== SPYGLASS CSS ================
+
+  .spyglass-div {
+    height: 85vh;
+  }
+
+  .spyglass {
+    background-image: url("../assets/spyglass.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60%;
+    margin: auto 0;
+  }
+
+  .spyglass-icons {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    .spy-data {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 45%;
+      .spy-icon-1,
+      .spy-icon-2 {
+        width: 100%;
+        height: 35px;
+        background-repeat: no-repeat;
+      }
+      .spy-icon-1 {
+        background-image: url("../assets/spyglass-icon1.png");
+        background-position: center;
+        background-size: contain;
+      }
+      .spy-icon-2 {
+        background-image: url("../assets/spyglass-icon2.png");
+        background-position: center;
+        background-size: contain;
+      }
+      .spy-text-1 {
+        font-family: "Sora";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.2px;
+        margin-bottom: 1px;
+        justify-content: center;
+
+        /* On White/Dark 100 */
+
+        color: #060714;
+      }
+      .spy-text-2 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 150%;
+        /* identical to box height, or 24px */
+
+        align-items: center;
+        letter-spacing: 0.2px;
+        margin-top: 1px;
+        /* On White/Grey 100 */
+
+        color: #7780a1;
+      }
+    }
+  }
+
+  // ============= POPULAR LIVE AUCTIONS ====================
+
+  .live-auction {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #e2e2ed;
+    border-bottom: 1px solid #e2e2ed;
+    padding-top: 2vh;
+    box-sizing: border-box;
+
+    .auctions-title {
+      margin: 1em 0;
+      margin-top: 0.1em;
+    }
+    .auction-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      width: fit-content;
+      margin: 0px auto;
+      column-gap: 10px;
+      .buttons {
+        font-family: "Sora";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.2px;
+        padding: 8px 5px;
+
+        /* On White/Grey 100 */
+
+        color: #7780a1;
+
+        border: 2px solid #e2e2ed;
+        border-radius: 8px;
+        background-color: #fcfcfc;
+        transition: 0.1s all ease-in;
+      }
+      .active {
+        border: 2px solid #bbc0d0;
+        border-radius: 8px;
+      }
+    }
+
+    .subheading-1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      align-items: center;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      /* On White/Grey 50 */
+
+      color: #bbc0d0;
+    }
+
+    .small-card-holder {
+      width: fit-content;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 1rem;
+      justify-content: space-between;
+      margin-top: 3rem;
+      // flex-wrap: wrap;
+    }
+  }
+}
+
+
+// ============================================ MIN WIDTH 768 PX ==================================================
+@media screen and (min-width: 768px) {
+  .landing-div {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/Group\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .maintitle{
+      width: 55%;
+    }
+
+    .subheading-1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: calc(0.5em+0.5vw);
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      /* On White/Grey 100 */
+
+      color: #7780a1;
+    }
+    .subheading-2 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: calc(1em + 1vw);
+      line-height: 150%;
+      /* identical to box height, or 36px */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.2px;
+
+      /* On White/Grey 100 */
+
+      color: #7780a1;
+    }
+    .form {
+      box-sizing: border-box;
+      padding: 10px 10px;
+      padding-right: 10px;
+      box-shadow: 0px 25px 75px rgba(6, 7, 20, 0.1);
+      border-radius: 16px;
+      width: 42%;
       height: 7%;
       background-color: white;
       display: flex;
@@ -104,7 +970,7 @@
     font-family: "Sora";
     font-style: normal;
     font-weight: 600;
-    font-size: 36px;
+    font-size: calc(2vw + 1.5em);
     line-height: 45px;
     display: flex;
     align-items: center;
@@ -133,11 +999,12 @@
     .paintbucket-data {
       width: 65%;
       display: flex;
-      height: 60%;
+      height: 100%;
+      flex-direction: row;
     }
 
     .paintbucket-info {
-      width: 40%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -145,8 +1012,9 @@
 
     .paint-buttons {
       display: flex;
+      justify-content: center;
       button {
-        width: 30%;
+        width: 40%;
         height: 6vh;
         margin-right: 10px;
       }
@@ -157,7 +1025,7 @@
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
-      width: 60%;
+      width: 50%;
       height: 100%;
     }
 
@@ -292,7 +1160,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 30%;
+      width: 45%;
       .spy-icon-1,
       .spy-icon-2 {
         width: 100%;
@@ -434,6 +1302,10 @@
     justify-content: center;
     align-items: center;
 
+    .maintitle{
+      width: 55%;
+    }
+
     .subheading-1 {
       font-family: "Inter";
       font-style: normal;
@@ -527,7 +1399,7 @@
     font-family: "Sora";
     font-style: normal;
     font-weight: 600;
-    font-size: 36px;
+    font-size: calc(2vw + 1.5em);
     line-height: 45px;
     display: flex;
     align-items: center;
@@ -560,7 +1432,7 @@
     }
 
     .paintbucket-info {
-      width: 40%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -580,7 +1452,7 @@
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
-      width: 60%;
+      width: 50%;
       height: 100%;
     }
 
@@ -859,6 +1731,10 @@
     align-items: center;
     margin-top: 7rem;
 
+    .maintitle{
+      width: 55%;
+    }
+
     .subheading-1 {
       font-family: "Inter";
       font-style: normal;
@@ -952,7 +1828,7 @@
     font-family: "Sora";
     font-style: normal;
     font-weight: 600;
-    font-size: 36px;
+    font-size: calc(2vw + 1.5em);
     line-height: 45px;
     display: flex;
     align-items: center;
@@ -966,7 +1842,10 @@
     margin-bottom: 10vh;
     margin-top: 7vh;
   }
-
+  .nftslider{
+    display: grid;
+  }
+  
   .mainpage {
     width: 99.5vw;
   }
@@ -1140,7 +2019,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 30%;
+      width: 40%;
       .spy-icon-1,
       .spy-icon-2 {
         width: 100%;
