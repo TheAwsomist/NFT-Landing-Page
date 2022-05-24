@@ -433,8 +433,8 @@
     width: -moz-fit-content;
     width: fit-content;
     margin: 0px 5px;
-    -webkit-column-gap: 10px;
-            column-gap: 10px;
+    -webkit-column-gap: 7px;
+            column-gap: 7px;
   }
   .live-auction .auction-buttons .buttons {
     font-family: "Sora";
@@ -997,7 +997,7 @@
 @media screen and (min-width: 768px) {
   .landing-div {
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     background-image: url("../assets/Group 1.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -1140,7 +1140,7 @@
     width: 99.5vw;
   }
   .paintbucket-div {
-    height: 75vh;
+    height: 65vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1152,7 +1152,7 @@
             align-items: center;
   }
   .paintbucket-div .paintbucket-data {
-    width: 65%;
+    width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1179,9 +1179,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
   .paintbucket-div .paint-buttons button {
     width: 40%;
@@ -1240,7 +1240,7 @@
   }
   .mobile-screens {
     width: 100%;
-    height: 90vh;
+    height: 40vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1316,7 +1316,7 @@
     visibility: visible;
   }
   .spyglass-div {
-    height: 85vh;
+    height: 55vh;
   }
   .spyglass {
     background-image: url("../assets/spyglass.png");
@@ -1327,8 +1327,16 @@
     height: 60%;
     margin: auto 0;
   }
+  #spy-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .spyglass-icons {
-    height: 30%;
+    height: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1396,7 +1404,7 @@
   }
   .live-auction {
     width: 100%;
-    height: 115vh;
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

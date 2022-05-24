@@ -3,7 +3,7 @@ import React from "react";
 export default function Spyglass() {
   return (
     <div className="paintbucket-div spyglass-div">
-      <div className="paintbucket-data spyglass-data" style={{ width: "80%", height: "100%" }}>
+      <div className="paintbucket-data spyglass-data" style={{ width: "85%", height: "100%" }}>
         <div className="spyglass"></div>
         <div className="paintbucket-info">
           <p className="subheading-1">OVERLINE</p>
@@ -26,7 +26,7 @@ export default function Spyglass() {
               <p className="spy-text-2">Cursus fermentum</p>
             </div>
           </div>
-          <div className="paint-buttons">
+          <div className="paint-buttons" id="spy-buttons">
             <button className="primary-button">Get Started</button>
             <button className="secondary-button">Learn more</button>
           </div>
