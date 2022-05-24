@@ -8,6 +8,9 @@ import Spyglass from "./Spyglass";
 import LiveAuctions from "./LiveAuctions";
 import Counter from "./Counter";
 import TabDiv from "./TabDiv";
+import ExtraSmallSlider from "./ExtraSmallSlider";
+import Footer from "./Footer";
+
 
 export default function MainNav() {
 
@@ -47,6 +50,8 @@ export default function MainNav() {
       <LiveAuctions/>
       <Counter/>
       <TabDiv/>
+      <ExtraSmallSlider/>
+      <Footer/>
     </div>
   );
 }

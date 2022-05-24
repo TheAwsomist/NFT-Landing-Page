@@ -1,6 +1,39 @@
 // ======================================== MIN WIDTH 320 PX ======================================================
 
 @media screen and (min-width: 320px) {
+  .extrasmall-card {
+    width: 15vw;
+    height: 12vh;
+    .extrasmall-image {
+      width: 100%;
+      height: 80%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: 0px 10px 15px 8px rgba(0,0,0,0.13);
+      border-radius: 15px;
+    }
+    .extrasmall-price {
+      margin: 0;
+      width: 100%;
+      height: 20%;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: calc(0.4em + 0.3vw);
+      line-height: 150%;
+      /* identical to box height, or 21px */
+
+      text-align: center;
+      letter-spacing: 0.2px;
+
+      /* On White/Grey 100 */
+
+      color: #7780a1;
+      margin-top: 4px;
+    }
+  }
+  
   .cardsmall {
     width: 35vw;
     height: 65vh;
@@ -220,6 +253,40 @@
 
 // ======================================== MIN WIDTH 480 PX ======================================================
 @media screen and (min-width: 480px) {
+  .extrasmall-card {
+    width: 11vw;
+    height: 12vh;
+    .extrasmall-image {
+      width: 100%;
+      height: 80%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: 0px 10px 15px 8px rgba(0,0,0,0.13);
+      border-radius: 15px;
+    }
+    .extrasmall-price {
+      margin: 0;
+      width: 100%;
+      height: 20%;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: calc(0.4em + 0.3vw);
+      line-height: 150%;
+      /* identical to box height, or 21px */
+
+      text-align: center;
+      letter-spacing: 0.2px;
+
+      /* On White/Grey 100 */
+
+      color: #7780a1;
+      margin-top: 4px;
+    }
+  }
+  
+  
   .cardsmall {
     width: 25vw;
     height: 65vh;
@@ -438,9 +505,49 @@
   }
 }
 
+@media screen and (min-width:600px){
+.extrasmall-card{
+  width: 8vw;
+}
+}
+
 // ======================================== MIN WIDTH 768 PX ======================================================
 
 @media screen and (min-width: 768px) {
+  .extrasmall-card {
+    width: 7vw;
+    height: 12vh;
+    .extrasmall-image {
+      width: 100%;
+      height: 80%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: 0px 10px 15px 8px rgba(0,0,0,0.13);
+      border-radius: 15px;
+    }
+    .extrasmall-price {
+      margin: 0;
+      width: 100%;
+      height: 20%;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: calc(0.4em + 0.3vw);
+      line-height: 150%;
+      /* identical to box height, or 21px */
+
+      text-align: center;
+      letter-spacing: 0.2px;
+
+      /* On White/Grey 100 */
+
+      color: #7780a1;
+      margin-top: 4px;
+    }
+  }
+  
+  
   .cardsmall {
     width: 14vw;
     height: 65vh;
@@ -662,6 +769,39 @@
 // ======================================== MIN WIDTH 1024 PX ======================================================
 
 @media screen and (min-width: 1024px) {
+  .extrasmall-card {
+    width: 6vw;
+    height: 12vh;
+    .extrasmall-image {
+      width: 100%;
+      height: 80%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: 0px 10px 15px 8px rgba(0,0,0,0.13);
+      border-radius: 15px;
+    }
+    .extrasmall-price {
+      margin: 0;
+      width: 100%;
+      height: 20%;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: calc(0.4em + 0.3vw);
+      line-height: 150%;
+      /* identical to box height, or 21px */
+
+      text-align: center;
+      letter-spacing: 0.2px;
+
+      /* On White/Grey 100 */
+
+      color: #7780a1;
+      margin-top: 4px;
+    }
+  }
+  
   .cardsmall {
     width: 12vw;
     height: 65vh;
@@ -883,6 +1023,39 @@
 // ======================================== MIN WIDTH 1200 PX ======================================================
 
 @media screen and (min-width: 1200px) {
+  .extrasmall-card {
+    width: 5vw;
+    height: 12vh;
+    .extrasmall-image {
+      width: 100%;
+      height: 80%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: 0px 10px 15px 8px rgba(0,0,0,0.13);
+      border-radius: 15px;
+    }
+    .extrasmall-price {
+      margin: 0;
+      width: 100%;
+      height: 20%;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: calc(0.4em + 0.3vw);
+      line-height: 150%;
+      /* identical to box height, or 21px */
+
+      text-align: center;
+      letter-spacing: 0.2px;
+
+      /* On White/Grey 100 */
+
+      color: #7780a1;
+      margin-top: 4px;
+    }
+  }
+
   .cardsmall {
     width: 12vw;
     height: 65vh;

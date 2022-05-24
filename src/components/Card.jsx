@@ -50,3 +50,13 @@ export function CardSmall({ cardimage }) {
     </div>
   );
 }
+
+export function ExtraSmallCard({image, price}) {
+  return (
+    <div className="extrasmall-card">
+      <div className="extrasmall-image" style={{backgroundImage:`url(${image})`}}></div>
+      <p className="extrasmall-price">{price} ETH</p>
+    </div>
+  )
+}
+
