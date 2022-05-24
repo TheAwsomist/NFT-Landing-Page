@@ -1,97 +1,455 @@
-.counter-div {
-  width: 100%;
-  height: 40vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 320px) {
+  .counter-div {
+    width: 100%;
+    height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .counter-div .counter-inner-div {
+    width: 65%;
+    height: 60%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .counter-div .counter-inner-div .counter-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .counter-div .counter-inner-div .counter-icon {
+    width: 100%;
+    height: 30%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .counter-div .counter-inner-div .user {
+    background-image: url("../assets/User Icon.png");
+  }
+  .counter-div .counter-inner-div .artwork {
+    background-image: url("../assets/Artworks Icon.png");
+  }
+  .counter-div .counter-inner-div .palette {
+    background-image: url("../assets/Palette Icon.png");
+  }
+  .counter-div .counter-inner-div .wallet {
+    background-image: url("../assets/Wallet Icon.png");
+  }
+  .counter-div .counter-inner-div .counter-count {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(1.5em + 1vw);
+    line-height: 115%;
+    /* or 55px */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+    /* On White/Dark 100 */
+    color: #060714;
+  }
+  .counter-div .counter-inner-div .counter-heading {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.5em + 0.5vw);
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    text-align: center;
+    letter-spacing: 0.2px;
+    /* On White/Grey 100 */
+    color: #7780a1;
+  }
 }
 
-.counter-div .counter-inner-div {
-  width: 60%;
-  height: 50%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
+@media screen and (min-width: 480px) {
+  .counter-div {
+    width: 100%;
+    height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .counter-div .counter-inner-div {
+    width: 65%;
+    height: 60%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .counter-div .counter-inner-div .counter-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .counter-div .counter-inner-div .counter-icon {
+    width: 100%;
+    height: 30%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .counter-div .counter-inner-div .user {
+    background-image: url("../assets/User Icon.png");
+  }
+  .counter-div .counter-inner-div .artwork {
+    background-image: url("../assets/Artworks Icon.png");
+  }
+  .counter-div .counter-inner-div .palette {
+    background-image: url("../assets/Palette Icon.png");
+  }
+  .counter-div .counter-inner-div .wallet {
+    background-image: url("../assets/Wallet Icon.png");
+  }
+  .counter-div .counter-inner-div .counter-count {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(1.5em + 1vw);
+    line-height: 115%;
+    /* or 55px */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+    /* On White/Dark 100 */
+    color: #060714;
+  }
+  .counter-div .counter-inner-div .counter-heading {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.5em + 0.5vw);
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    text-align: center;
+    letter-spacing: 0.2px;
+    /* On White/Grey 100 */
+    color: #7780a1;
+  }
 }
 
-.counter-div .counter-inner-div .counter-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media screen and (min-width: 768px) {
+  .counter-div {
+    width: 100%;
+    height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .counter-div .counter-inner-div {
+    width: 70%;
+    height: 60%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .counter-div .counter-inner-div .counter-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .counter-div .counter-inner-div .counter-icon {
+    width: 100%;
+    height: 18%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .counter-div .counter-inner-div .user {
+    background-image: url("../assets/User Icon.png");
+  }
+  .counter-div .counter-inner-div .artwork {
+    background-image: url("../assets/Artworks Icon.png");
+  }
+  .counter-div .counter-inner-div .palette {
+    background-image: url("../assets/Palette Icon.png");
+  }
+  .counter-div .counter-inner-div .wallet {
+    background-image: url("../assets/Wallet Icon.png");
+  }
+  .counter-div .counter-inner-div .counter-count {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(1.5em + 1vw);
+    line-height: 115%;
+    /* or 55px */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+    /* On White/Dark 100 */
+    color: #060714;
+  }
+  .counter-div .counter-inner-div .counter-heading {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.5em + 0.5vw);
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    text-align: center;
+    letter-spacing: 0.2px;
+    /* On White/Grey 100 */
+    color: #7780a1;
+  }
 }
 
-.counter-div .counter-inner-div .counter-icon {
-  width: 100%;
-  height: 20%;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+@media screen and (min-width: 1024px) {
+  .counter-div {
+    width: 100%;
+    height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .counter-div .counter-inner-div {
+    width: 60%;
+    height: 60%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .counter-div .counter-inner-div .counter-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .counter-div .counter-inner-div .counter-icon {
+    width: 100%;
+    height: 18%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .counter-div .counter-inner-div .user {
+    background-image: url("../assets/User Icon.png");
+  }
+  .counter-div .counter-inner-div .artwork {
+    background-image: url("../assets/Artworks Icon.png");
+  }
+  .counter-div .counter-inner-div .palette {
+    background-image: url("../assets/Palette Icon.png");
+  }
+  .counter-div .counter-inner-div .wallet {
+    background-image: url("../assets/Wallet Icon.png");
+  }
+  .counter-div .counter-inner-div .counter-count {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(1.5em + 1vw);
+    line-height: 115%;
+    /* or 55px */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+    /* On White/Dark 100 */
+    color: #060714;
+  }
+  .counter-div .counter-inner-div .counter-heading {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.5em + 0.5vw);
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    text-align: center;
+    letter-spacing: 0.2px;
+    /* On White/Grey 100 */
+    color: #7780a1;
+  }
 }
 
-.counter-div .counter-inner-div .user {
-  background-image: url("../assets/User Icon.png");
-}
-
-.counter-div .counter-inner-div .artwork {
-  background-image: url("../assets/Artworks Icon.png");
-}
-
-.counter-div .counter-inner-div .palette {
-  background-image: url("../assets/Palette Icon.png");
-}
-
-.counter-div .counter-inner-div .wallet {
-  background-image: url("../assets/Wallet Icon.png");
-}
-
-.counter-div .counter-inner-div .counter-count {
-  font-family: "Sora";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 3rem;
-  line-height: 115%;
-  /* or 55px */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  letter-spacing: 0.2px;
-  /* On White/Dark 100 */
-  color: #060714;
-}
-
-.counter-div .counter-inner-div .counter-heading {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 150%;
-  /* identical to box height, or 24px */
-  text-align: center;
-  letter-spacing: 0.2px;
-  /* On White/Grey 100 */
-  color: #7780a1;
+@media screen and (min-width: 1200px) {
+  .counter-div {
+    width: 100%;
+    height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .counter-div .counter-inner-div {
+    width: 55%;
+    height: 60%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .counter-div .counter-inner-div .counter-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .counter-div .counter-inner-div .counter-icon {
+    width: 100%;
+    height: 18%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .counter-div .counter-inner-div .user {
+    background-image: url("../assets/User Icon.png");
+  }
+  .counter-div .counter-inner-div .artwork {
+    background-image: url("../assets/Artworks Icon.png");
+  }
+  .counter-div .counter-inner-div .palette {
+    background-image: url("../assets/Palette Icon.png");
+  }
+  .counter-div .counter-inner-div .wallet {
+    background-image: url("../assets/Wallet Icon.png");
+  }
+  .counter-div .counter-inner-div .counter-count {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(1.5em + 1vw);
+    line-height: 115%;
+    /* or 55px */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+    /* On White/Dark 100 */
+    color: #060714;
+  }
+  .counter-div .counter-inner-div .counter-heading {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.5em + 0.5vw);
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    text-align: center;
+    letter-spacing: 0.2px;
+    /* On White/Grey 100 */
+    color: #7780a1;
+  }
 }
 /*# sourceMappingURL=Counter.css.map */

@@ -1,6 +1,6 @@
 @media screen and (min-width: 320px) {
   .cardsmall {
-    width: 40vw;
+    width: 35vw;
     height: 65vh;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -64,6 +64,18 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 0px 10px;
+  }
+  .cardsmall .card-bottom-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    borderbottom: 0.5px solid lightgrey;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .cardsmall .price-tag {
     width: 40%;
@@ -258,7 +270,7 @@
 
 @media screen and (min-width: 480px) {
   .cardsmall {
-    width: 29vw;
+    width: 25vw;
     height: 65vh;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -322,6 +334,22 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 0px 10px;
+  }
+  .cardsmall .card-bottom-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 0.5px solid lightgrey;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .cardsmall .price-tag {
     width: 40%;
@@ -623,6 +651,22 @@
     color: #060714;
     width: 100%;
   }
+  .cardsmall .card-bottom-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 0.5px solid lightgrey;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .cardsmall .timer {
     font-family: "Inter";
     font-style: normal;
@@ -838,6 +882,22 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 0px 10px;
+  }
+  .cardsmall .card-bottom-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 0.5px solid lightgrey;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .cardsmall .price-tag {
     width: 40%;

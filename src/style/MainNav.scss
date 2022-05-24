@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
 
-    .maintitle{
+    .maintitle {
       width: 75%;
     }
 
@@ -276,7 +276,7 @@
   // ================== SPYGLASS CSS ================
 
   .spyglass-div {
-    height: 85vh;
+    height: 100vh;
     margin-bottom: 7vh;
   }
 
@@ -293,7 +293,7 @@
   .spyglass-icons {
     height: 30%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     .spy-data {
       display: flex;
       flex-direction: column;
@@ -348,7 +348,6 @@
     }
   }
 
-
   // ============= POPULAR LIVE AUCTIONS ====================
 
   .live-auction {
@@ -367,11 +366,17 @@
       margin-top: 0.1em;
     }
     .auction-buttons {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      display: flex;
+      width: -moz-fit-content;
+      flex-direction: row;
+      flex-wrap: wrap;
       width: fit-content;
       margin: 0px 5px;
+      padding: 0px 11px;
+      box-sizing: border-box;
       column-gap: 10px;
+      row-gap: 10px;
+      justify-content: center;
       .buttons {
         font-family: "Sora";
         font-style: normal;
@@ -442,7 +447,7 @@
     justify-content: center;
     align-items: center;
 
-    .maintitle{
+    .maintitle {
       width: 75%;
     }
 
@@ -559,7 +564,7 @@
   }
 
   .paintbucket-div {
-    height: 100vh;
+    height: 110vh;
     // border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -708,7 +713,7 @@
   // ================== SPYGLASS CSS ================
 
   .spyglass-div {
-    height: 85vh;
+    height: 100vh;
   }
 
   .spyglass {
@@ -858,7 +863,6 @@
   }
 }
 
-
 // ============================================ MIN WIDTH 768 PX ==================================================
 @media screen and (min-width: 768px) {
   .landing-div {
@@ -873,7 +877,7 @@
     justify-content: center;
     align-items: center;
 
-    .maintitle{
+    .maintitle {
       width: 55%;
     }
 
@@ -1288,7 +1292,6 @@
 
 // =================================== MIN WIDTH 1024 PX ========================================================
 
-
 @media screen and (min-width: 1024px) {
   .landing-div {
     width: 100%;
@@ -1302,7 +1305,7 @@
     justify-content: center;
     align-items: center;
 
-    .maintitle{
+    .maintitle {
       width: 55%;
     }
 
@@ -1713,9 +1716,7 @@
   }
 }
 
-
 // =================================== MIN WIDTH 1200 PX ========================================================
-
 
 @media screen and (min-width: 1200px) {
   .landing-div {
@@ -1731,7 +1732,7 @@
     align-items: center;
     margin-top: 7rem;
 
-    .maintitle{
+    .maintitle {
       width: 55%;
     }
 
@@ -1842,10 +1843,10 @@
     margin-bottom: 10vh;
     margin-top: 7vh;
   }
-  .nftslider{
+  .nftslider {
     display: grid;
   }
-  
+
   .mainpage {
     width: 99.5vw;
   }

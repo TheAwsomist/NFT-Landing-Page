@@ -36,12 +36,7 @@ export function CardSmall({ cardimage }) {
           <p className="card-title">Dui accumsan leo vestibulum ornare eu</p>
         </div>
         <div
-          style={{
-            display: "flex",
-            borderBottom: "0.5px solid lightgrey",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
+          className="card-bottom-info"
         >
           <div
           className="timer"

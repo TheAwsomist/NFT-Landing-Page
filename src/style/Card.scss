@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 320px) {
   .cardsmall {
-    width: 40vw;
+    width: 35vw;
     height: 65vh;
     // border: 1px solid black;
     box-sizing: border-box;
@@ -43,6 +43,12 @@
       justify-content: space-between;
       box-sizing: border-box;
       padding: 0px 10px;
+    }
+    .card-bottom-info {
+      display: flex;
+      borderbottom: 0.5px solid lightgrey;
+      justify-content: space-between;
+      align-items: center;
     }
     .price-tag {
       width: 40%;
@@ -215,7 +221,7 @@
 // ======================================== MIN WIDTH 480 PX ======================================================
 @media screen and (min-width: 480px) {
   .cardsmall {
-    width: 29vw;
+    width: 25vw;
     height: 65vh;
     // border: 1px solid black;
     box-sizing: border-box;
@@ -256,6 +262,13 @@
       justify-content: space-between;
       box-sizing: border-box;
       padding: 0px 10px;
+    }
+    .card-bottom-info {
+      display: flex;
+      border-bottom: 0.5px solid lightgrey;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
     }
     .price-tag {
       width: 40%;
@@ -511,6 +524,13 @@
       color: #060714;
       width: 100%;
     }
+    .card-bottom-info {
+      display: flex;
+      border-bottom: 0.5px solid lightgrey;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+    }
     .timer {
       font-family: "Inter";
       font-style: normal;
@@ -685,6 +705,13 @@
       box-sizing: border-box;
       padding: 0px 10px;
     }
+    .card-bottom-info {
+      display: flex;
+      border-bottom: 0.5px solid lightgrey;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
     .price-tag {
       width: 40%;
       background: rgba(42, 39, 201, 0.1);
@@ -852,7 +879,6 @@
     }
   }
 }
-
 
 // ======================================== MIN WIDTH 1200 PX ======================================================
 
@@ -1068,13 +1094,13 @@
   }
 }
 
-@media screen and (min-width:1350px) {
-  .card{
+@media screen and (min-width: 1350px) {
+  .card {
     width: 85%;
   }
 }
-@media screen and (min-width:1500px) {
-  .card{
+@media screen and (min-width: 1500px) {
+  .card {
     width: 80%;
   }
 }

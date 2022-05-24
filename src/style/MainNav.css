@@ -317,7 +317,7 @@
     visibility: visible;
   }
   .spyglass-div {
-    height: 85vh;
+    height: 100vh;
     margin-bottom: 7vh;
   }
   .spyglass {
@@ -334,9 +334,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .spyglass-icons .spy-data {
     display: -webkit-box;
@@ -425,16 +425,28 @@
     margin-top: 0.1em;
   }
   .live-auction .auction-buttons {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: -webkit-fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: -moz-fit-content;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: -webkit-fit-content;
     width: fit-content;
     margin: 0px 5px;
+    padding: 0px 11px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-column-gap: 10px;
             column-gap: 10px;
+    row-gap: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .live-auction .auction-buttons .buttons {
     font-family: "Sora";
@@ -641,7 +653,7 @@
     width: 99.5vw;
   }
   .paintbucket-div {
-    height: 100vh;
+    height: 110vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -814,7 +826,7 @@
     visibility: visible;
   }
   .spyglass-div {
-    height: 85vh;
+    height: 100vh;
   }
   .spyglass {
     background-image: url("../assets/spyglass.png");
