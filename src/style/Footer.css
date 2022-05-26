@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) {
   .footer-div {
     width: 100%;
     height: 60vh;
@@ -14,13 +14,16 @@
             align-items: center;
   }
   .footer-div .footer-data {
-    width: 80%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     border: 2px solid #e2e2ed;
     border-radius: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 50px;
   }
   .footer-div .footer-data .footer-left {
     padding: 20px 0px 30px 30px;
@@ -40,7 +43,7 @@
   }
   .footer-div .footer-data .footer-left .logo {
     background-image: url("../assets/Logo.png");
-    width: 10vw;
+    width: 20vw;
     height: 5vh;
     background-position: center;
     background-size: contain;
@@ -51,9 +54,11 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-column-gap: 25px;
-            column-gap: 25px;
+    -webkit-column-gap: calc(0.5em + 0.5vw);
+            column-gap: calc(0.5em + 0.5vw);
     padding: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -107,7 +112,425 @@
     color: #060714;
   }
   .footer-div .footer-data .footer-center .primary-button {
-    padding: 18px 12px;
+    padding: 13px 12px;
+    width: 44%;
+    font-size: calc(0.5em + 0.5vw);
+    white-space: nowrap;
+  }
+  .footer-div .footer-data .footer-center .contact-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-div .footer-data .footer-center .contact-icons .icon {
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .footer-div .footer-data .footer-right {
+    border-left: 2px solid #e2e2ed;
+    padding: 20px 60px 45px 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-div .footer-data .footer-right p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.4em + 0.4vw);
+    line-height: 150%;
+    text-align: left;
+    /* or 24px */
+    letter-spacing: 0.2px;
+    /* On White/Grey 100 */
+    color: #7780a1;
+  }
+  .footer-div .footer-data .footer-right .newsletter-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 3.5vh;
+    width: 16vw;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 25px 75px rgba(6, 7, 20, 0.1);
+            box-shadow: 0px 25px 75px rgba(6, 7, 20, 0.1);
+    padding: 5px 10px;
+    border-radius: 16px;
+  }
+  .footer-div .footer-data .footer-right .newsletter-div input {
+    border: none;
+    height: 90%;
+    width: 90%;
+    font-size: calc(0.4em + 0.4vw);
+  }
+  .footer-div .footer-data .footer-right .newsletter-div input:focus {
+    outline: none;
+  }
+  .footer-div .footer-data .footer-right .newsletter-div .newsletter-button {
+    border: none;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(0.4em + 0.4vw);
+    line-height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+    height: 100%;
+    /* Primary/Purple Dark 100 */
+    color: #2a27c9;
+    background-color: white;
+  }
+  .footer-div .footer-data .footer-section {
+    width: 33.333%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer-div {
+    width: 100%;
+    height: 60vh;
+    margin-top: 7em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-div .footer-data {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e2e2ed;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .footer-div .footer-data .footer-left {
+    padding: 20px 0px 30px 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-right: 2px solid #e2e2ed;
+  }
+  .footer-div .footer-data .footer-left .logo {
+    background-image: url("../assets/Logo.png");
+    width: 20vw;
+    height: 5vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .footer-div .footer-data .footer-left .options ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: calc(0.5em + 0.5vw);
+            column-gap: calc(0.5em + 0.5vw);
+    padding: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.4em + 0.4vw);
+    line-height: 150%;
+    /* identical to box height, or 21px */
+    text-align: center;
+    letter-spacing: 0.2px;
+    /* On White/Grey 100 */
+    color: #7780a1;
+  }
+  .footer-div .footer-data .footer-center {
+    padding: 20px 0px 45px 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-div .footer-data .footer-center .center-options {
+    list-style: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(0.5em + 0.5vw);
+    line-height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    letter-spacing: 0.2px;
+    padding: 0;
+    /* On White/Dark 100 */
+    color: #060714;
+  }
+  .footer-div .footer-data .footer-center .primary-button {
+    padding: 13px 12px;
+    width: 44%;
+    font-size: calc(0.5em + 0.5vw);
+    white-space: nowrap;
+  }
+  .footer-div .footer-data .footer-center .contact-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-div .footer-data .footer-center .contact-icons .icon {
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .footer-div .footer-data .footer-right {
+    border-left: 2px solid #e2e2ed;
+    padding: 20px 60px 45px 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-div .footer-data .footer-right p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.4em + 0.4vw);
+    line-height: 150%;
+    text-align: left;
+    /* or 24px */
+    letter-spacing: 0.2px;
+    /* On White/Grey 100 */
+    color: #7780a1;
+  }
+  .footer-div .footer-data .footer-right .newsletter-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 3.5vh;
+    width: 16vw;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 25px 75px rgba(6, 7, 20, 0.1);
+            box-shadow: 0px 25px 75px rgba(6, 7, 20, 0.1);
+    padding: 5px 10px;
+    border-radius: 16px;
+  }
+  .footer-div .footer-data .footer-right .newsletter-div input {
+    border: none;
+    height: 90%;
+    width: 90%;
+    font-size: calc(0.4em + 0.4vw);
+  }
+  .footer-div .footer-data .footer-right .newsletter-div input:focus {
+    outline: none;
+  }
+  .footer-div .footer-data .footer-right .newsletter-div .newsletter-button {
+    border: none;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(0.4em + 0.4vw);
+    line-height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+    height: 100%;
+    /* Primary/Purple Dark 100 */
+    color: #2a27c9;
+    background-color: white;
+  }
+  .footer-div .footer-data .footer-section {
+    width: 33.333%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-div {
+    width: 100%;
+    height: 60vh;
+    margin-top: 7em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-div .footer-data {
+    width: 80%;
+    height: 100%;
+    border: 2px solid #e2e2ed;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .footer-div .footer-data .footer-left {
+    padding: 20px 0px 30px 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-right: 2px solid #e2e2ed;
+  }
+  .footer-div .footer-data .footer-left .logo {
+    background-image: url("../assets/Logo.png");
+    width: 14vw;
+    height: 5vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .footer-div .footer-data .footer-left .options ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: calc(0.5em + 0.5vw);
+            column-gap: calc(0.5em + 0.5vw);
+    padding: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.4em + 0.4vw);
+    line-height: 150%;
+    /* identical to box height, or 21px */
+    text-align: center;
+    letter-spacing: 0.2px;
+    /* On White/Grey 100 */
+    color: #7780a1;
+  }
+  .footer-div .footer-data .footer-center {
+    padding: 20px 0px 45px 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-div .footer-data .footer-center .center-options {
+    list-style: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(0.5em + 0.5vw);
+    line-height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    letter-spacing: 0.2px;
+    padding: 0;
+    /* On White/Dark 100 */
+    color: #060714;
+  }
+  .footer-div .footer-data .footer-center .primary-button {
+    padding: 13px 12px;
     width: 44%;
     font-size: calc(0.5em + 0.5vw);
     white-space: nowrap;
@@ -221,12 +644,13 @@
   }
   .footer-div .footer-data {
     width: 80%;
-    height: 70%;
+    height: 100%;
     border: 2px solid #e2e2ed;
     border-radius: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 50px;
   }
   .footer-div .footer-data .footer-left {
     padding: 20px 0px 30px 30px;
@@ -313,7 +737,7 @@
     color: #060714;
   }
   .footer-div .footer-data .footer-center .primary-button {
-    padding: 18px 12px;
+    padding: 14px 12px;
     width: 44%;
     font-size: calc(0.5em + 0.5vw);
   }
@@ -426,7 +850,8 @@
   }
   .footer-div .footer-data {
     width: 80%;
-    height: 70%;
+    height: 100%;
+    margin-bottom: 50px;
     border: 2px solid #e2e2ed;
     border-radius: 20px;
     display: -webkit-box;
@@ -518,7 +943,7 @@
     color: #060714;
   }
   .footer-div .footer-data .footer-center .primary-button {
-    padding: 18px 12px;
+    padding: 14px 12px;
     width: 35%;
     font-size: calc(0.5em + 0.5vw);
   }
