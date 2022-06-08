@@ -220,7 +220,7 @@
 @media screen and (min-width: 480px) {
   .footer-div {
     width: 100%;
-    height: 60vh;
+    height: 22em;
     margin-top: 7em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -276,6 +276,7 @@
     padding: 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    row-gap: 10px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -324,15 +325,17 @@
         -ms-flex-align: start;
             align-items: flex-start;
     letter-spacing: 0.2px;
+    margin-top: 5px;
     padding: 0;
     /* On White/Dark 100 */
     color: #060714;
   }
   .footer-div .footer-data .footer-center .primary-button {
     padding: 13px 12px;
-    width: 44%;
+    width: 62%;
     font-size: calc(0.5em + 0.5vw);
     white-space: nowrap;
+    display: block;
   }
   .footer-div .footer-data .footer-center .contact-icons {
     display: -webkit-box;
@@ -437,7 +440,7 @@
 @media screen and (min-width: 768px) {
   .footer-div {
     width: 100%;
-    height: 30em;
+    height: 22em;
     margin-top: 7em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -547,8 +550,8 @@
     color: #060714;
   }
   .footer-div .footer-data .footer-center .primary-button {
-    padding: 10px 12px;
-    width: 50%;
+    padding: 12px 12px;
+    width: 55%;
     font-size: calc(0.5em + 0.5vw);
     white-space: nowrap;
   }
@@ -608,6 +611,10 @@
             box-shadow: 0px 25px 75px rgba(6, 7, 20, 0.1);
     padding: 5px 10px;
     border-radius: 16px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .footer-div .footer-data .footer-right .newsletter-div input {
     border: none;
@@ -647,7 +654,7 @@
 @media screen and (min-width: 1024px) {
   .footer-div {
     width: 100%;
-    height: 30em;
+    height: 22em;
     margin-top: 7em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -853,7 +860,7 @@
 @media screen and (min-width: 1200px) {
   .footer-div {
     width: 100%;
-    height: 30em;
+    height: 22em;
     margin-top: 7em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -961,7 +968,7 @@
   }
   .footer-div .footer-data .footer-center .primary-button {
     padding: 13px 12px;
-    width: 35%;
+    width: 45%;
     font-size: calc(0.5em + 0.5vw);
   }
   .footer-div .footer-data .footer-center .contact-icons {

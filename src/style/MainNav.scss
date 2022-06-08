@@ -152,7 +152,7 @@
       display: flex;
       button {
         width: 30%;
-        height: 6vh;
+        height: 4em;
         margin-right: 10px;
       }
     }
@@ -588,7 +588,7 @@
       display: flex;
       button {
         width: 30%;
-        height: 6vh;
+        height: 4em;
         margin-right: 10px;
       }
     }
@@ -714,6 +714,7 @@
 
   .spyglass-div {
     height: 40em;
+    margin-top: 20px;
   }
 
   .spyglass {
@@ -789,7 +790,7 @@
 
   .live-auction {
     width: 100%;
-    height: fit-content;
+    height: 80em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1019,7 +1020,7 @@
       justify-content: start;
       button {
         width: 40%;
-        height: 6vh;
+        height: 4em;
         margin-right: 10px;
       }
     }
@@ -1144,7 +1145,7 @@
   // ================== SPYGLASS CSS ================
 
   .spyglass-div {
-    height: 55vh;
+    height: 40em;
   }
 
   .spyglass {
@@ -1223,7 +1224,7 @@
 
   .live-auction {
     width: 100%;
-    height: 100vh;
+    height: 50em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1450,7 +1451,7 @@
       display: flex;
       button {
         width: 30%;
-        height: 6vh;
+        height: 4em;
         margin-right: 10px;
       }
     }
@@ -1575,7 +1576,7 @@
   // ================== SPYGLASS CSS ================
 
   .spyglass-div {
-    height: 85vh;
+    height: 40em;
   }
 
   .spyglass {
@@ -1649,7 +1650,7 @@
 
   .live-auction {
     width: 100%;
-    height: 115vh;
+    height: 50em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1880,7 +1881,7 @@
       display: flex;
       button {
         width: 30%;
-        height: 6vh;
+        height: 4em;
         margin-right: 10px;
       }
     }
@@ -2005,7 +2006,7 @@
   // ================== SPYGLASS CSS ================
 
   .spyglass-div {
-    height: 85vh;
+    height: 40em;
   }
 
   .spyglass {
@@ -2079,7 +2080,7 @@
 
   .live-auction {
     width: 100%;
-    height: 115vh;
+    height: 50em;
     display: flex;
     flex-direction: column;
     justify-content: center;

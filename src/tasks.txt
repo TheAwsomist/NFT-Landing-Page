@@ -1,3 +1,5 @@
 >responsive footer
 >API data
 >Redux Implementation
+>add responsiveness
+>fix buttons disappearance
