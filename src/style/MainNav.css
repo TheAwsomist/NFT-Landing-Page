@@ -1,7 +1,7 @@
 @media screen and (min-width: 320px) {
   .landing-div {
     width: 100%;
-    height: 50vh;
+    height: 23.125em;
     background-image: url("../assets/Group 1.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -144,7 +144,7 @@
     width: 99.5vw;
   }
   .paintbucket-div {
-    height: 90vh;
+    height: 40em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -241,7 +241,7 @@
   }
   .mobile-screens {
     width: 100%;
-    height: 45vh;
+    height: 30em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -317,8 +317,8 @@
     visibility: visible;
   }
   .spyglass-div {
-    height: 100vh;
-    margin-bottom: 7vh;
+    height: 40em;
+    margin-bottom: 3em;
   }
   .spyglass {
     background-image: url("../assets/spyglass.png");
@@ -510,7 +510,7 @@
 @media screen and (min-width: 480px) {
   .landing-div {
     width: 100%;
-    height: 50vh;
+    height: 23.125em;
     background-image: url("../assets/Group 1.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -653,7 +653,7 @@
     width: 99.5vw;
   }
   .paintbucket-div {
-    height: 110vh;
+    height: 45em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -750,7 +750,7 @@
   }
   .mobile-screens {
     width: 100%;
-    height: 55vh;
+    height: 30em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -826,7 +826,7 @@
     visibility: visible;
   }
   .spyglass-div {
-    height: 100vh;
+    height: 40em;
   }
   .spyglass {
     background-image: url("../assets/spyglass.png");
@@ -1009,7 +1009,7 @@
 @media screen and (min-width: 768px) {
   .landing-div {
     width: 100%;
-    height: 60vh;
+    height: 55em;
     background-image: url("../assets/Group 1.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -1152,7 +1152,7 @@
     width: 99.5vw;
   }
   .paintbucket-div {
-    height: 65vh;
+    height: 40em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1252,7 +1252,7 @@
   }
   .mobile-screens {
     width: 100%;
-    height: 40vh;
+    height: 45em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1508,7 +1508,7 @@
 @media screen and (min-width: 1024px) {
   .landing-div {
     width: 100%;
-    height: 100vh;
+    height: 55em;
     background-image: url("../assets/Group 1.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -1651,7 +1651,7 @@
     width: 99.5vw;
   }
   .paintbucket-div {
-    height: 75vh;
+    height: 45em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1744,7 +1744,7 @@
   }
   .mobile-screens {
     width: 100%;
-    height: 90vh;
+    height: 45em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1992,7 +1992,7 @@
 @media screen and (min-width: 1200px) {
   .landing-div {
     width: 100%;
-    height: 100vh;
+    height: 55em;
     background-image: url("../assets/Group 1.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -2140,7 +2140,7 @@
     width: 99.5vw;
   }
   .paintbucket-div {
-    height: 75vh;
+    height: 40em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2233,7 +2233,7 @@
   }
   .mobile-screens {
     width: 100%;
-    height: 90vh;
+    height: 45em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2475,6 +2475,15 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .mobile-screens {
+    height: 40em;
+  }
+  .mobile-screens .image-displays {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=MainNav.css.map */

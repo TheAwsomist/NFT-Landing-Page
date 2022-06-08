@@ -172,7 +172,7 @@
   }
   .card {
     width: 85%;
-    height: 55vh;
+    height: 25em;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: -webkit-box;
@@ -476,7 +476,7 @@
   }
   .card {
     width: 85%;
-    height: 55vh;
+    height: 25em;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: -webkit-box;
@@ -560,7 +560,7 @@
     font-family: "Sora";
     font-style: normal;
     font-weight: 600;
-    font-size: 0.8vw;
+    font-size: calc(0.4em + 0.4vw);
     line-height: 20px;
     display: flex;
     align-items: center;
@@ -786,7 +786,7 @@
   }
   .card {
     width: 85%;
-    height: 55vh;
+    height: 35em;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: -webkit-box;
@@ -870,7 +870,7 @@
     font-family: "Sora";
     font-style: normal;
     font-weight: 600;
-    font-size: 0.8vw;
+    font-size: calc(0.4em + 0.4vw);
     line-height: 20px;
     display: flex;
     align-items: center;
@@ -1089,7 +1089,7 @@
   }
   .card {
     width: 90%;
-    height: 55vh;
+    height: 35em;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: -webkit-box;
@@ -1173,7 +1173,7 @@
     font-family: "Sora";
     font-style: normal;
     font-weight: 600;
-    font-size: 0.8vw;
+    font-size: calc(0.4em + 0.4vw);
     line-height: 20px;
     display: flex;
     align-items: center;
@@ -1377,7 +1377,7 @@
   }
   .card {
     width: 90%;
-    height: 55vh;
+    height: 35em;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: -webkit-box;

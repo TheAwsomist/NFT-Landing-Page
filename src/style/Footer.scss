@@ -2,7 +2,7 @@
 @media screen and (min-width: 768px) {
   .footer-div {
     width: 100%;
-    height: 60vh;
+    height: 30em;
     margin-top: 7em;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@
       border-radius: 20px;
       display: flex;
       .footer-left {
-        padding: 20px 0px 30px 30px;
+        padding: 20px 0px 30px 15px;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
@@ -22,7 +22,7 @@
         border-right: 2px solid #e2e2ed;
         .logo {
           background-image: url("../assets/Logo.png");
-          width: 10vw;
+          width: 15vw;
           height: 5vh;
           background-position: center;
           background-size: contain;
@@ -33,6 +33,8 @@
           display: flex;
           column-gap: 25px;
           padding: 0;
+          flex-wrap: wrap;
+          row-gap: 15px;
 
           font-family: "Inter";
           font-style: normal;
@@ -74,8 +76,8 @@
           color: #060714;
         }
         .primary-button {
-          padding: 18px 12px;
-          width: 44%;
+          padding: 10px 12px;
+          width: 50%;
           font-size: calc(0.5em + 0.5vw);
           white-space: nowrap;
         }
@@ -164,7 +166,7 @@
 @media screen and (min-width: 1024px) {
   .footer-div {
     width: 100%;
-    height: 60vh;
+    height: 30em;
     margin-top: 7em;
     display: flex;
     justify-content: center;
@@ -236,7 +238,7 @@
           color: #060714;
         }
         .primary-button {
-          padding: 18px 12px;
+          padding: 12px 12px;
           width: 44%;
           font-size: calc(0.5em + 0.5vw);
         }
@@ -246,8 +248,8 @@
           row-gap: 20px;
           flex-wrap: wrap;
           .icon {
-            width: 25px;
-            height: 25px;
+            width: 22px;
+            height: 22px;
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -325,7 +327,7 @@
 @media screen and (min-width: 1200px) {
   .footer-div {
     width: 100%;
-    height: 60vh;
+    height: 30em;
     margin-top: 7em;
     display: flex;
     justify-content: center;
@@ -397,7 +399,7 @@
           color: #060714;
         }
         .primary-button {
-          padding: 18px 12px;
+          padding: 13px 12px;
           width: 35%;
           font-size: calc(0.5em + 0.5vw);
         }
@@ -407,8 +409,8 @@
           row-gap: 20px;
           flex-wrap: wrap;
           .icon {
-            width: 25px;
-            height: 25px;
+            width: 22px;
+            height: 22px;
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
