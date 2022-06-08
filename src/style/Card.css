@@ -1,7 +1,7 @@
 @media screen and (min-width: 320px) {
   .extrasmall-card {
     width: 15vw;
-    height: 12vh;
+    height: 5em;
   }
   .extrasmall-card .extrasmall-image {
     width: 100%;
@@ -312,7 +312,7 @@
 @media screen and (min-width: 480px) {
   .extrasmall-card {
     width: 11vw;
-    height: 12vh;
+    height: 5em;
   }
   .extrasmall-card .extrasmall-image {
     width: 100%;
@@ -629,7 +629,7 @@
 @media screen and (min-width: 768px) {
   .extrasmall-card {
     width: 7vw;
-    height: 12vh;
+    height: 5em;
   }
   .extrasmall-card .extrasmall-image {
     width: 100%;
@@ -935,7 +935,7 @@
 @media screen and (min-width: 1024px) {
   .extrasmall-card {
     width: 6vw;
-    height: 12vh;
+    height: 5em;
   }
   .extrasmall-card .extrasmall-image {
     width: 100%;
@@ -1242,7 +1242,7 @@
 @media screen and (min-width: 1200px) {
   .extrasmall-card {
     width: 5vw;
-    height: 12vh;
+    height: 5em;
   }
   .extrasmall-card .extrasmall-image {
     width: 100%;
