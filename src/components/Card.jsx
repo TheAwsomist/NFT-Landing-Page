@@ -2,7 +2,7 @@ import React from "react";
 import "../style/Card.css";
 import { AiOutlineClockCircle } from "react-icons/ai";
 
-export function Card({ cardimage }) {
+export function Card({ cardimage, cardtitle }) {
   return (
     <div className="card">
       <div
@@ -11,7 +11,7 @@ export function Card({ cardimage }) {
       ></div>
       <div className="info-section">
         <div className="card-info">
-          <p className="card-title">Dui accumsan leo vestibulum ornare eu</p>
+          <p className="card-title">{cardtitle}</p>
           <div className="price-tag">1.311 ETH</div>
         </div>
         <div
@@ -24,7 +24,7 @@ export function Card({ cardimage }) {
     </div>
   );
 }
-export function CardSmall({ cardimage }) {
+export function CardSmall({ cardimage, cardtitle }) {
   return (
     <div className="cardsmall">
       <div
@@ -33,7 +33,7 @@ export function CardSmall({ cardimage }) {
       ></div>
       <div className="info-section">
         <div className="card-info">
-          <p className="card-title">Dui accumsan leo vestibulum ornare eu</p>
+          <p className="card-title">{cardtitle}</p>
         </div>
         <div
           className="card-bottom-info"

@@ -6,16 +6,20 @@ import nft3 from "../assets/nft-small-3.png";
 import nft4 from "../assets/nft-small-4.png";
 import nft5 from "../assets/nft-small-5.png";
 import nft6 from "../assets/nft-small-6.png";
+import { useSelector } from 'react-redux';
 
 export default function NftSlider2() {
+  const nft_images = useSelector(state => state.nfts)
   return (
-    <div className='small-card-holder'>
-        <CardSmall cardimage={nft1}/>
-        <CardSmall cardimage={nft2}/>
-        <CardSmall cardimage={nft3}/>
-        <CardSmall cardimage={nft4}/>
-        <CardSmall cardimage={nft5}/>
-        <CardSmall cardimage={nft6}/>
-    </div>
+    <>
+{    nft_images.length !== 0 &&    <div className='small-card-holder'>
+        <CardSmall cardimage={nft_images[13].image} cardtitle={nft_images[13].title}/>
+        <CardSmall cardimage={nft_images[14].image} cardtitle={nft_images[14].title}/>
+        <CardSmall cardimage={nft_images[15].image} cardtitle={nft_images[15].title}/>
+        <CardSmall cardimage={nft_images[16].image} cardtitle={nft_images[16].title}/>
+        <CardSmall cardimage={nft_images[17].image} cardtitle={nft_images[17].title}/>
+        <CardSmall cardimage={nft_images[18].image} cardtitle={nft_images[18].title}/>
+        </div>}
+    </>
   )
 }

@@ -1,5 +1,6 @@
->responsive footer
 >API data
 >Redux Implementation
->add responsiveness
 >fix buttons disappearance
+>Add Session Storage
+>Prices update using openseaAPI
+https://api.opensea.io/api/v1/asset/{address of asset contract}/{token id}/
