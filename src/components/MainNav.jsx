@@ -23,16 +23,17 @@ export default function MainNav() {
   var title;
   var images = [];
   const dispatch = useDispatch();
-  
-  const randomizer = () =>{
-    var result = Math.random()*5.0;  //I wouldn't have used randomizer for prices if I had OpenSea API Key to make several asset requests for prices but I must resort to this shameful act ; - ; 
+
+  const randomizer = () => {
+    var result = Math.random() * 5.0; //I wouldn't have used randomizer for prices if I had OpenSea API Key to make several asset requests for prices but I must resort to this shameful act ; - ;
     return result.toFixed(3);
-  }
-  const randomizer_date = () =>{
-    var result = Math.floor(Math.random()*23) + ":" + Math.floor(Math.random()*60);
+  };
+  const randomizer_date = () => {
+    var result =
+      Math.floor(Math.random() * 23) + ":" + Math.floor(Math.random() * 60);
     return result;
-  } 
-  
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -40,53 +41,62 @@ export default function MainNav() {
       });
     });
     observer.observe(domRef.current);
-
-    const options = {
-      method: "GET",
-      url: "https://opensea13.p.rapidapi.com/bundles",
-      params: { limit: "30", offset: "0" },
-      headers: {
-        "X-RapidAPI-Host": "opensea13.p.rapidapi.com",
-        "X-RapidAPI-Key": "33e183288cmsh8e1dba124c134c2p1fbfe3jsn2b0f4a4fc390",
-      },
-    };
-    axios
-      .request(options)
-      .then(function (response) {
-        datadump = response.data.bundles;
-        datadump.map((data) => {
-          if (
-            data.assets[0].image_url !== null &&
-            data.assets[0].is_nsfw === false &&
-            data.assets[0].name !== null
-          ) {
-            image = data.assets[0].image_url;
-            title = data.assets[0].name;
-            const address = data.assets[0].asset_contract.address;
-            var price = randomizer();
-            var time = randomizer_date();
-            const tokenid = data.assets[0].token_id;
-            
-          }
-          images.push({
-            image: image,
-            title: title,
-            price: price,
-            time: time
+    images = sessionStorage.getItem("nfts");
+    images = JSON.parse(images);
+    console.log(images);
+    if (!images) {
+      images = [];
+      const options = {
+        method: "GET",
+        url: "https://opensea13.p.rapidapi.com/bundles",
+        params: { limit: "30", offset: "0" },
+        headers: {
+          "X-RapidAPI-Host": "opensea13.p.rapidapi.com",
+          "X-RapidAPI-Key":
+            "33e183288cmsh8e1dba124c134c2p1fbfe3jsn2b0f4a4fc390",
+        },
+      };
+      axios
+        .request(options)
+        .then(function (response) {
+          datadump = response.data.bundles;
+          datadump.map((data) => {
+            if (
+              data.assets[0].image_url !== null &&
+              data.assets[0].is_nsfw === false &&
+              data.assets[0].name !== null
+            ) {
+              image = data.assets[0].image_url;
+              title = data.assets[0].name;
+              const address = data.assets[0].asset_contract.address;
+              var price = randomizer();
+              var time = randomizer_date();
+              const tokenid = data.assets[0].token_id;
+            }
+            images.push({
+              image: image,
+              title: title,
+              price: price,
+              time: time,
+            });
           });
+          images = images.filter(
+            (value, index, self) =>
+              index ===
+              self.findIndex(
+                (t) => t.image === value.image && t.title === value.title
+              )
+          );
+          sessionStorage.setItem("nfts",JSON.stringify(images));
+          dispatch(nftimport(images));
+        })
+        .catch(function (error) {
+          console.error(error);
         });
-        images = images.filter(
-          (value, index, self) =>
-            index ===
-            self.findIndex(
-              (t) => t.image === value.image && t.title === value.title
-            )
-        );
-        dispatch(nftimport(images));
-      })
-      .catch(function (error) {
-        console.error(error);
-      });
+    }
+    else{
+      dispatch(nftimport(images));
+    }
 
     return () => observer.unobserve(domRef.current);
   }, []);
