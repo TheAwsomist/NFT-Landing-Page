@@ -49,7 +49,7 @@ export default function MainNav() {
       const options = {
         method: "GET",
         url: "https://opensea13.p.rapidapi.com/bundles",
-        params: { limit: "30", offset: "0" },
+        params: { limit: "55", offset: "0" },
         headers: {
           "X-RapidAPI-Host": "opensea13.p.rapidapi.com",
           "X-RapidAPI-Key":
