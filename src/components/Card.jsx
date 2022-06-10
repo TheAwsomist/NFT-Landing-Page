@@ -2,7 +2,7 @@ import React from "react";
 import "../style/Card.css";
 import { AiOutlineClockCircle } from "react-icons/ai";
 
-export function Card({ cardimage, cardtitle }) {
+export function Card({ cardimage, cardtitle, price }) {
   return (
     <div className="card">
       <div
@@ -12,7 +12,7 @@ export function Card({ cardimage, cardtitle }) {
       <div className="info-section">
         <div className="card-info">
           <p className="card-title">{cardtitle}</p>
-          <div className="price-tag">1.311 ETH</div>
+          <div className="price-tag">{price} ETH</div>
         </div>
         <div
           className="timer"

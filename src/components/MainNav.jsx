@@ -18,6 +18,9 @@ export default function MainNav() {
   const [isVisible, setVisible] = React.useState(false);
   const domRef = useRef();
   var datadump;
+  var price;
+  var image;
+  var title;
   var images = [];
   const dispatch = useDispatch();
 
@@ -48,13 +51,27 @@ export default function MainNav() {
             data.assets[0].is_nsfw === false &&
             data.assets[0].name !== null
           ) {
-            const image = data.assets[0].image_url;
-            const name = data.assets[0].name;
-            images.push({
-              image: image,
-              title: name,
+            image = data.assets[0].image_url;
+            title = data.assets[0].name;
+            const address = data.assets[0].asset_contract.address;
+            var price;
+            const tokenid = data.assets[0].token_id;
+            const url = {
+              method: "GET",
+              url: `https://cors-anywhere.herokuapp.com/https://api.opensea.io/api/v1/asset/${address}/${tokenid}/`,
+              headers: {"Access-Control-Allow-Origin": "*"} 
+            };
+            axios.request(url).then(function (response) {
+
+              price = response.data.collection.stats.one_day_average_price.toFixed(3);
+              console.log(price);
             });
           }
+          images.push({
+            image: image,
+            title: title,
+            price: price
+          });
         });
         images = images.filter(
           (value, index, self) =>

@@ -1,5 +1,5 @@
->API data
->Redux Implementation
+>API data |
+>Redux Implementation |
 >fix buttons disappearance
 >Add Session Storage
 >Prices update using openseaAPI
