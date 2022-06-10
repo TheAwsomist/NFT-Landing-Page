@@ -13,12 +13,12 @@ export default function NftSlider2() {
   return (
     <>
 {    nft_images.length !== 0 &&    <div className='small-card-holder'>
-        <CardSmall cardimage={nft_images[13].image} cardtitle={nft_images[13].title}/>
-        <CardSmall cardimage={nft_images[14].image} cardtitle={nft_images[14].title}/>
-        <CardSmall cardimage={nft_images[15].image} cardtitle={nft_images[15].title}/>
-        <CardSmall cardimage={nft_images[16].image} cardtitle={nft_images[16].title}/>
-        <CardSmall cardimage={nft_images[17].image} cardtitle={nft_images[17].title}/>
-        <CardSmall cardimage={nft_images[18].image} cardtitle={nft_images[18].title}/>
+        <CardSmall cardimage={nft_images[13].image} cardtitle={nft_images[13].title} price = {nft_images[13].price} time={nft_images[13].time}/>
+        <CardSmall cardimage={nft_images[14].image} cardtitle={nft_images[14].title} price = {nft_images[14].price} time={nft_images[14].time}/>
+        <CardSmall cardimage={nft_images[15].image} cardtitle={nft_images[15].title} price = {nft_images[15].price} time={nft_images[15].time}/>
+        <CardSmall cardimage={nft_images[16].image} cardtitle={nft_images[16].title} price = {nft_images[16].price} time={nft_images[16].time}/>
+        <CardSmall cardimage={nft_images[17].image} cardtitle={nft_images[17].title} price = {nft_images[17].price} time={nft_images[17].time}/>
+        <CardSmall cardimage={nft_images[18].image} cardtitle={nft_images[18].title} price = {nft_images[18].price} time={nft_images[18].time}/>
         </div>}
     </>
   )

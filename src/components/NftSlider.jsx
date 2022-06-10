@@ -70,18 +70,18 @@ export default function NftSlider() {
   return(
       <div>
         {nft_images.length !==0 && <Slider {...settings} className="nftslider">
-          <div><Card cardimage={nft_images[1].image} cardtitle={nft_images[1].title}/></div>
-          <div><Card cardimage={nft_images[2].image} cardtitle={nft_images[2].title}/></div>
-          <div><Card cardimage={nft_images[3].image} cardtitle={nft_images[3].title}/></div>
-          <div><Card cardimage={nft_images[4].image} cardtitle={nft_images[4].title}/></div>
-          <div><Card cardimage={nft_images[5].image} cardtitle={nft_images[5].title}/></div>
-          <div><Card cardimage={nft_images[6].image} cardtitle={nft_images[6].title}/></div>
-          <div><Card cardimage={nft_images[7].image} cardtitle={nft_images[7].title}/></div>
-          <div><Card cardimage={nft_images[8].image} cardtitle={nft_images[8].title}/></div>
-          <div><Card cardimage={nft_images[9].image} cardtitle={nft_images[9].title}/></div>
-          <div><Card cardimage={nft_images[10].image} cardtitle={nft_images[10].title}/></div>
-          <div><Card cardimage={nft_images[11].image} cardtitle={nft_images[11].title}/></div>
-          <div><Card cardimage={nft_images[12].image} cardtitle={nft_images[12].title}/></div>
+          <div><Card cardimage={nft_images[1].image} cardtitle={nft_images[1].title} price = {nft_images[1].price} time = {nft_images[1].time}/></div>
+          <div><Card cardimage={nft_images[2].image} cardtitle={nft_images[2].title} price = {nft_images[2].price} time = {nft_images[2].time}/></div>
+          <div><Card cardimage={nft_images[3].image} cardtitle={nft_images[3].title} price = {nft_images[3].price} time = {nft_images[3].time}/></div>
+          <div><Card cardimage={nft_images[4].image} cardtitle={nft_images[4].title} price = {nft_images[4].price} time = {nft_images[4].time}/></div>
+          <div><Card cardimage={nft_images[5].image} cardtitle={nft_images[5].title} price = {nft_images[5].price} time = {nft_images[5].time}/></div>
+          <div><Card cardimage={nft_images[6].image} cardtitle={nft_images[6].title} price = {nft_images[6].price} time = {nft_images[6].time}/></div>
+          <div><Card cardimage={nft_images[7].image} cardtitle={nft_images[7].title} price = {nft_images[7].price} time = {nft_images[7].time}/></div>
+          <div><Card cardimage={nft_images[8].image} cardtitle={nft_images[8].title} price = {nft_images[8].price} time = {nft_images[8].time}/></div>
+          <div><Card cardimage={nft_images[9].image} cardtitle={nft_images[9].title} price = {nft_images[9].price} time = {nft_images[9].time}/></div>
+          <div><Card cardimage={nft_images[10].image} cardtitle={nft_images[10].title} price = {nft_images[10].price} time = {nft_images[10].time}/></div>
+          <div><Card cardimage={nft_images[11].image} cardtitle={nft_images[11].title} price = {nft_images[11].price} time = {nft_images[11].time}/></div>
+          <div><Card cardimage={nft_images[12].image} cardtitle={nft_images[12].title} price = {nft_images[12].price} time = {nft_images[12].time}/></div>
         </Slider>}
       </div>
   );

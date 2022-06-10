@@ -8,9 +8,10 @@ import Extra4 from "../assets/extrasmall4.png";
 import Extra5 from "../assets/extrasmall5.png";
 import Extra6 from "../assets/extrasmall6.png";
 import Extra7 from "../assets/extrasmall7.png";
+import { useSelector } from 'react-redux';
 
 export default function ExtraSmallSlider() {
-
+    var nft_images = useSelector(state => state.nfts);
     var settings = {
         infinity:true,
         autoplay:true,
@@ -67,22 +68,22 @@ export default function ExtraSmallSlider() {
   return (
     <div className='extrasmall-slider' style={{marginTop:"3em"}}>
         <Slider  {...settings}>
-            <div><ExtraSmallCard image={Extra1} price={1.45}/></div>
-            <div><ExtraSmallCard image={Extra2} price={1.45}/></div>
-            <div><ExtraSmallCard image={Extra3} price={1.45}/></div>
-            <div><ExtraSmallCard image={Extra1} price={1.45}/></div>
-            <div><ExtraSmallCard image={Extra4} price={1.45}/></div>
-            <div><ExtraSmallCard image={Extra7} price={1.45}/></div>
-            <div><ExtraSmallCard image={Extra1} price={1.45}/></div>
-            <div><ExtraSmallCard image={Extra3} price={1.45}/></div>
-            <div><ExtraSmallCard image={Extra6} price={1.45}/></div>
-            <div><ExtraSmallCard image={Extra2} price={1.45}/></div>
-            <div><ExtraSmallCard image={Extra5} price={1.45}/></div>
-            <div><ExtraSmallCard image={Extra3} price={1.45}/></div>
-            <div><ExtraSmallCard image={Extra2} price={1.45}/></div>
-            <div><ExtraSmallCard image={Extra4} price={1.45}/></div>
-            <div><ExtraSmallCard image={Extra5} price={1.45}/></div>
-            <div><ExtraSmallCard image={Extra3} price={1.45}/></div>
+            <div><ExtraSmallCard image={nft_images[19].image} price={nft_images[19].price}/></div>
+            <div><ExtraSmallCard image={nft_images[20].image} price={nft_images[20].price}/></div>
+            <div><ExtraSmallCard image={nft_images[21].image} price={nft_images[21].price}/></div>
+            <div><ExtraSmallCard image={nft_images[22].image} price={nft_images[22].price}/></div>
+            <div><ExtraSmallCard image={nft_images[23].image} price={nft_images[23].price}/></div>
+            <div><ExtraSmallCard image={nft_images[24].image} price={nft_images[24].price}/></div>
+            <div><ExtraSmallCard image={nft_images[25].image} price={nft_images[25].price}/></div>
+            <div><ExtraSmallCard image={nft_images[26].image} price={nft_images[26].price}/></div>
+            <div><ExtraSmallCard image={nft_images[27].image} price={nft_images[27].price}/></div>
+            <div><ExtraSmallCard image={nft_images[28].image} price={nft_images[28].price}/></div>
+            <div><ExtraSmallCard image={nft_images[1].image} price={nft_images[1].price}/></div>
+            <div><ExtraSmallCard image={nft_images[2].image} price={nft_images[2].price}/></div>
+            <div><ExtraSmallCard image={nft_images[3].image} price={nft_images[3].price}/></div>
+            <div><ExtraSmallCard image={nft_images[4].image} price={nft_images[4].price}/></div>
+            <div><ExtraSmallCard image={nft_images[5].image} price={nft_images[5].price}/></div>
+            <div><ExtraSmallCard image={nft_images[6].image} price={nft_images[6].price}/></div>
         </Slider>
     </div>
   )

@@ -2,7 +2,7 @@ import React from "react";
 import "../style/Card.css";
 import { AiOutlineClockCircle } from "react-icons/ai";
 
-export function Card({ cardimage, cardtitle, price }) {
+export function Card({ cardimage, cardtitle, price, time }) {
   return (
     <div className="card">
       <div
@@ -18,13 +18,13 @@ export function Card({ cardimage, cardtitle, price }) {
           className="timer"
           style={{ display: "flex", alignItems: "center" }}
         >
-          <AiOutlineClockCircle style={{height:"fit-content",marginBottom: "3px"}}/> <p style={{margin:"0", height:"fit-content",width:"55%",textAlign:"center"}}>22:59 min left</p>
+          <AiOutlineClockCircle style={{height:"fit-content",marginBottom: "3px"}}/> <p style={{margin:"0", height:"fit-content",width:"55%",textAlign:"center"}}>{time} min left</p>
         </div>
       </div>
     </div>
   );
 }
-export function CardSmall({ cardimage, cardtitle }) {
+export function CardSmall({ cardimage, cardtitle, price, time }) {
   return (
     <div className="cardsmall">
       <div
@@ -42,9 +42,9 @@ export function CardSmall({ cardimage, cardtitle }) {
           className="timer"
           style={{ display: "flex", alignItems: "center" }}
         >
-          <AiOutlineClockCircle style={{height:"fit-content"}}/> <p style={{margin:"0", height:"fit-content",width:"100%",textAlign:"center"}}>22:59 min </p>
+          <AiOutlineClockCircle style={{height:"fit-content"}}/> <p style={{margin:"0", height:"fit-content",width:"100%",textAlign:"center"}}>{time} min </p>
         </div>
-          <div className="price-tag">1.311 ETH</div>
+          <div className="price-tag">{price} ETH</div>
         </div>
       </div>
     </div>

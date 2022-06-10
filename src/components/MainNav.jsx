@@ -23,7 +23,16 @@ export default function MainNav() {
   var title;
   var images = [];
   const dispatch = useDispatch();
-
+  
+  const randomizer = () =>{
+    var result = Math.random()*5.0;  //I wouldn't have used randomizer for prices if I had OpenSea API Key to make several asset requests for prices but I must resort to this shameful act ; - ; 
+    return result.toFixed(3);
+  }
+  const randomizer_date = () =>{
+    var result = Math.floor(Math.random()*23) + ":" + Math.floor(Math.random()*60);
+    return result;
+  } 
+  
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -54,22 +63,16 @@ export default function MainNav() {
             image = data.assets[0].image_url;
             title = data.assets[0].name;
             const address = data.assets[0].asset_contract.address;
-            var price;
+            var price = randomizer();
+            var time = randomizer_date();
             const tokenid = data.assets[0].token_id;
-            const url = {
-              method: "GET",
-              url: `https://api.opensea.io/api/v1/asset/${address}/${tokenid}/`,
-            };
-            axios.request(url).then(function (response) {
-
-              price = response.data.collection.stats.one_day_average_price.toFixed(3);
-              console.log(price);
-            });
+            
           }
           images.push({
             image: image,
             title: title,
-            price: price
+            price: price,
+            time: time
           });
         });
         images = images.filter(
