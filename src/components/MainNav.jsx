@@ -59,7 +59,6 @@ export default function MainNav() {
             const url = {
               method: "GET",
               url: `https://api.opensea.io/api/v1/asset/${address}/${tokenid}/`,
-              headers: {"Access-Control-Allow-Origin": "*"} 
             };
             axios.request(url).then(function (response) {
 
