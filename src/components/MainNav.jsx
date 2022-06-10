@@ -58,7 +58,7 @@ export default function MainNav() {
             const tokenid = data.assets[0].token_id;
             const url = {
               method: "GET",
-              url: `https://cors-anywhere.herokuapp.com/https://api.opensea.io/api/v1/asset/${address}/${tokenid}/`,
+              url: `https://api.opensea.io/api/v1/asset/${address}/${tokenid}/`,
               headers: {"Access-Control-Allow-Origin": "*"} 
             };
             axios.request(url).then(function (response) {
