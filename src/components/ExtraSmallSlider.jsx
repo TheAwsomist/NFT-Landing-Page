@@ -80,44 +80,44 @@ export default function ExtraSmallSlider() {
             </div>
             <div>
               <ExtraSmallCard
-                image={nft_images[21].image}
-                price={nft_images[21].price}
+                image={nft_images[16].image}
+                price={nft_images[16].price}
               />
             </div>
             <div>
               <ExtraSmallCard
-                image={nft_images[22].image}
-                price={nft_images[22].price}
+                image={nft_images[17].image}
+                price={nft_images[17].price}
               />
             </div>
             <div>
               <ExtraSmallCard
-                image={nft_images[23].image}
-                price={nft_images[23].price}
+                image={nft_images[15].image}
+                price={nft_images[15].price}
               />
             </div>
             <div>
               <ExtraSmallCard
-                image={nft_images[24].image}
-                price={nft_images[24].price}
+                image={nft_images[9].image}
+                price={nft_images[9].price}
               />
             </div>
             <div>
               <ExtraSmallCard
-                image={nft_images[25].image}
-                price={nft_images[25].price}
+                image={nft_images[10].image}
+                price={nft_images[10].price}
               />
             </div>
             <div>
               <ExtraSmallCard
-                image={nft_images[26].image}
-                price={nft_images[26].price}
+                image={nft_images[12].image}
+                price={nft_images[12].price}
               />
             </div>
             <div>
               <ExtraSmallCard
-                image={nft_images[27].image}
-                price={nft_images[27].price}
+                image={nft_images[11].image}
+                price={nft_images[11].price}
               />
             </div>
             <div>
